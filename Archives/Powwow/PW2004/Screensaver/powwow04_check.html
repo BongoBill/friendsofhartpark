@@ -1,0 +1,97 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" 
+"http://www.w3.org/TR/REC-html40/loose.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<META name="GENERATOR" content="IBM WebSphere Studio">
+<META http-equiv="Content-Style-Type" content="text/css">
+
+<LINK href="scr.css" rel="stylesheet" type="text/css">
+
+<TITLE>Friends of Hart Park and Museum</TITLE>
+
+
+</HEAD>
+
+<BODY bgcolor="Black">
+
+<B>
+
+<script language="JavaScript" type="text/JavaScript">
+<!--
+
+var szGroup = new String("POWWOW04")
+var szRegKey = new String(" ")
+var szActive = new String(" ")
+var regParms = new String(" ");
+
+function getValidate () {
+	var szAllCookies = top.document.cookie;
+	var szCookie = new String("");
+	var beg = 0;
+	var end = 0;
+
+
+	beg = szAllCookies.indexOf( 'Validate=' );
+	if ( beg != -1 )
+	{
+		beg = beg + 9;
+		end = szAllCookies.indexOf( ';', beg );
+		if ( end < 1 )  end = szAllCookies.length;
+		regParms =  szAllCookies.substring(beg, end);
+		szCookie =  unescape( regParms );
+		regParms = szCookie;
+	}
+
+	beg = 0;
+
+
+	if ( szCookie.length > 0 )
+	{
+		beg =	szCookie.indexOf( 'GROUP=' );
+		if ( beg != -1 )
+		{
+			beg = beg + 6;
+			end = szCookie.indexOf( ',', beg );
+			if ( end < 1 )  end = szCookie.length;
+			szGroup = szCookie.substring(beg, end);
+		}
+		beg = 0;
+		beg = szCookie.indexOf( 'REGKEY=' );
+		if ( beg != -1 )
+		{
+			beg = beg + 7;
+			end =   szCookie.indexOf( ',', beg );
+			if ( end < 1 )  end = szCookie.length;
+			szRegKey = szCookie.substring(beg, end);
+		}
+		beg = 0;
+		beg = szCookie.indexOf( 'ACTIVE=' );
+		if ( beg != -1 )
+		{
+			beg = beg + 7;
+			end =   szCookie.indexOf( ',', beg );
+			if ( end < 1 )  end = szCookie.length;
+			szActive = szCookie.substring(beg, end);
+		}
+
+		regParms = String("GROUP=" + szGroup + ",REGKEY=" + szRegKey + ",ACTIVE=" + szActive);
+	}
+}
+
+getValidate();
+
+if ( szActive.search("YES") == 0 )
+{
+	this.location.pathname = "/download/" + szGroup + "/" + szRegKey + "/Best_of_Powwow.exe";
+}
+
+//-->
+</script>
+
+</B>
+
+</BODY>
+
+
+</HTML>

@@ -1,0 +1,106 @@
+BODY
+{
+	BACKGROUND-COLOR: #007AB3;
+	COLOR: BlackAqua;
+	FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	padding : 1px 0px 1px 0px;
+	margin : 0px;
+	font-size : 11px;
+	SCROLLBAR-FACE-COLOR: #FF9800;
+	SCROLLBAR-HIGHLIGHT-COLOR: Aqua;
+	SCROLLBAR-3DLIGHT-COLOR: #DBFF6B;
+	SCROLLBAR-DARKSHADOW-COLOR: #000000;
+	SCROLLBAR-SHADOW-COLOR: #505050;
+	SCROLLBAR-ARROW-COLOR: #C80000;
+	SCROLLBAR-TRACK-COLOR: #007AB3;
+}
+H1
+{
+    COLOR: #6666CC;
+    FONT-FAMILY: 'Times New Roman';
+    TEXT-TRANSFORM: capitalize
+}
+H2
+{
+    COLOR: #6666CC;
+    FONT-FAMILY: 'Times New Roman';
+    TEXT-TRANSFORM: capitalize
+}
+H3
+{
+    COLOR: #6666CC;
+    FONT-FAMILY: 'Times New Roman';
+    TEXT-TRANSFORM: capitalize
+}
+
+H4
+{
+	COLOR: #1C649B;
+	FONT-FAMILY: "Times New Roman", Times, serif;
+	TEXT-TRANSFORM: capitalize;
+	margin : 0px;
+	padding : 0px 0px 3px 0px;
+}
+
+H5
+{
+    COLOR: #6666CC;
+    FONT-FAMILY: 'Times New Roman';
+    TEXT-TRANSFORM: capitalize
+}
+H6
+{
+    COLOR: #6666CC;
+    FONT-FAMILY: 'Times New Roman';
+    TEXT-TRANSFORM: capitalize
+}
+TABLE{
+	COLOR: Black;
+	FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	padding : 0px;
+	margin : 0px;
+	font-size : 11px;
+	background-repeat : no-repeat;
+}
+TD{
+	COLOR: Black;
+	FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	padding : 0px;
+	margin : 0px;
+	font-size : 11px;
+	vertical-align : top;
+}
+TD#EVENT{
+	COLOR: Black;
+	FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	padding : 0px 6px 0px 0px;
+	margin : 0px;
+	font-size : 11px;
+	vertical-align : top;
+	width : 130px;
+}
+TD#DESC{
+	COLOR: Black;
+	FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	padding : 0px 0px 0px 6px;
+	margin : 0px;
+	font-size : 12px;
+	vertical-align : top;
+	width : 592px;
+	font : 12px/16px;
+}
+TD#DESC2{
+	COLOR: Black;
+	FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	padding : 0px 0px 0px 0px;
+	margin : 0px;
+	font-size : 12px;
+	vertical-align : top;
+	width : 330px;
+	font : 12px/16px;
+}
+SPAN.SMALL{
+	font-size : 9px;
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font : /10px;
+}

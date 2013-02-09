@@ -1,0 +1,46 @@
+BODY  {
+	COLOR: Black;
+	font-style : normal;
+	font-weight : normal;
+	font-size : 12px;
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	margin-top : 2px;
+	margin-left : 0px;
+	margin-right : 0px;
+	margin-bottom : 2px;
+}
+TD  {
+	color : #000000;
+	font-style : normal;
+	font-weight : normal;
+	font-size : 12px;
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+}
+A:link 
+{
+    COLOR:#0050A5;
+}
+A:visited 
+{
+    COLOR:#32739C;
+}
+A 	 	
+{
+    TEXT-DECORATION: none
+}
+A:hover
+{
+    COLOR:#C80000;
+	TEXT-DECORATION: underline
+}
+div.HEAD
+{
+	padding: 2px 2px 2px 0px;
+	background: url(../images/HEAD.gif) repeat;
+	height: 24px;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	vertical-align: middle;
+	color: #8B0000;
+}

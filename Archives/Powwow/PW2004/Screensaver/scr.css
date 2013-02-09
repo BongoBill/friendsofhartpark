@@ -1,0 +1,88 @@
+BODY  {
+	COLOR: Black;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 11px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	background: url(bg.gif) repeat-x;
+	background-color: Black;
+}
+TD  {
+	color: #000000;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	padding: 4px 4px 4px 4px;
+}
+div.Title
+{
+	padding : 0px 0px 5px 0px;
+	COLOR: #BB0000;
+	FONT-FAMILY: ' Arial, Verdana, Helvetica, sans-serif';
+	font-size : 18px;
+	font-weight : bolder;
+	height : 20px;
+}
+div.SubTtl
+{
+	padding : 0px 0px 5px 0px;
+	COLOR: #CC0000;
+	FONT-FAMILY: ' Arial, Verdana, Helvetica, sans-serif';
+	font-size : 16px;
+	font-weight : bolder;
+	height : 18px;
+}
+div.WARN
+{
+	color: White;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 11px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+B.THNX
+{
+	color: #DD0000;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+B.NOTE
+{
+	color: White;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+B.LINK
+{
+	color: White;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+A:link 
+{
+    COLOR:#75B5FE;
+}
+A:visited 
+{
+    COLOR:#1067EA;
+}
+A 	 	
+{
+    TEXT-DECORATION: underline
+}
+A:hover
+{
+    COLOR:#FF0000;
+	TEXT-DECORATION: none
+}

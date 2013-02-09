@@ -1,0 +1,142 @@
+BODY
+{
+	margin : 0px 0px 0px 0px;
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+A:link 
+{
+    COLOR:#0000AA;
+}
+A:visited 
+{
+    COLOR:#28478A;
+}
+A 	 	
+{
+    TEXT-DECORATION: none
+}
+A:hover
+{
+    COLOR:#FF0000;
+	TEXT-DECORATION: underline
+}
+B.CPTN
+{
+	font-family : "Times New Roman", Times, serif;
+	font-size : 16px;
+	color : #190C0D;
+}
+B.ALT
+{
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 15px;
+	color : #832317;
+}
+B.EVNTS
+{
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 12px;
+	color : Black;
+}
+H2
+{
+    COLOR: #AA1503;
+	FONT-FAMILY: ' Arial, Verdana, Helvetica, sans-serif';
+	TEXT-TRANSFORM: none;
+	MARGIN : 0px;
+	PADDING : 0px;
+	WHITE-SPACE : inherit;
+	letter-spacing : 1px;
+}
+H3
+{
+    COLOR: #AA1503;
+	FONT-FAMILY: ' Arial, Verdana, Helvetica, sans-serif';
+	TEXT-TRANSFORM: none;
+	MARGIN : 0px;
+	PADDING : 0px;
+	WHITE-SPACE : inherit;
+	letter-spacing : 1px;
+}
+TABLE 
+{
+	width: 100%; 
+	margin: 0;
+}
+TABLE TD
+ {
+	padding: 0;
+	border-width: 0;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+TD#NAV
+{
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 11px;
+	vertical-align : top;
+}
+TD#LGL
+{
+	padding : 5px 15px 0px 15px;
+	vertical-align : top;
+}
+TD#POW
+{
+    font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	vertical-align : top;
+	padding : 2px 4px 2px 4px;
+	font-size : 14px;
+}
+.MMBR
+{
+	vertical-align : top;
+	padding : 0px 0px 0px 0px;
+}
+TD#MMBR
+{
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 11px;
+	vertical-align : top;
+	padding : 2px 2px 2px 2px;
+}
+TD#MBRB
+{
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 10px;
+	vertical-align : top;
+	padding : 2px 2px 2px 2px;
+}
+.CONT
+{
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 12px;
+	vertical-align : top;
+	padding : 8px 0px 8px 12px;
+	width : 630px;
+}
+.CNTCT
+{
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 12px;
+	vertical-align : top;
+	padding : 8px 0px 8px 12px;
+	width : 240px;
+}
+TD#CNTCT
+{
+	padding : 2px 0px 2px 0px;
+}
+TD#FTR
+{
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 10px;
+	vertical-align : baseline;
+}
+div.TTL
+{
+	padding : 10px 0px 5px 0px;
+}
+div.IMG
+{
+	padding : 10px 0px 10px 0px;
+}
