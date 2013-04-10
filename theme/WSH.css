@@ -3,6 +3,35 @@
 	font-weight : bold;
 }
 /* default? */
+p.lots
+{
+    COLOR: #8F5310;
+	font-style : normal;
+	font-weight : normal;
+	font-size : 100%;
+	font-family : "Bodoni MT", "DejaVu Serif", "Times New Roman", serif;
+	text-align: left;
+	margin:	10px;
+	text-indent:50px;
+}
+#main {
+	float:left;
+	width:80%;
+}
+#sidebar {
+	float:right;
+	width:20%;
+	background:#8F5310;
+}
+#footer {
+	clear:both;
+}
+IMG.centered 
+{
+    display: block;
+	margin-left: auto;
+	margin-right: auto 
+}
 p
 {
     COLOR: #66001a;
