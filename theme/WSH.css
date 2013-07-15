@@ -54,6 +54,33 @@ p.lots
 	margin:10px 20px 10px 25px;
 	padding: 5px 10px ;
 }
+#leftthird {
+	color: #009900;
+	float:left;
+	width:210px;
+	padding: 0px ;
+	margin: 8px 0px 8px 4px;
+}
+#leftborder {
+	float:left;
+	width:44px;
+	padding: 4px 0px 4px 0px;
+	margin: 8px 0px 8px 0px;
+}
+#rightthird {
+	color: #009900;
+	float:right;
+	width:350px;
+	padding: 0px ;
+	margin: 8px 4px 8px 0px;
+}
+#footthird {
+	color : #CC6600;
+	text-align: center;
+	clear:both;
+	padding: 4px ;
+	margin: 0px 4px 8px 4px ;
+}
 #main {
 	float:left;
 	width:80%;
@@ -65,6 +92,19 @@ p.lots
 }
 #footer {
 	clear:both;
+}
+ul#barbed
+{
+list-style-type:none;
+padding:0px;
+margin:0px;
+}
+ul li#barbed
+{
+background-image:url(../images/BarbedWireBullet.png);
+background-repeat:no-repeat;
+background-position:0px 3px; 
+padding-left:20px;
 }
 IMG.centered 
 {
@@ -183,6 +223,17 @@ TD  {
 	font-weight : normal;
 	font-family : "DejaVu Serif", "Times New Roman", serif;
 }
+}
+H4#GREEN  {
+	COLOR: #11FF11;
+	font-style : normal;
+	font-weight : normal;
+	font-size : 13px;
+	font-family : "Caslon", "DejaVu Serif", "Times New Roman", serif;
+	margin-top : 2px;
+	margin-left : 0px;
+	margin-right : 0px;
+	margin-bottom : 2px;
 }
 TD#EventDate
 {
