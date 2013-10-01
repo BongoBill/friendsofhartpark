@@ -179,6 +179,16 @@ H3
 	WHITE-SPACE : inherit;
 	letter-spacing : 1px;
 }
+H3#GREEN
+{
+	COLOR: #11BB11;
+	font-family : "Caslon", "DejaVu Serif", "Times New Roman", serif;
+	TEXT-TRANSFORM: none;
+	MARGIN : 0px;
+	PADDING : 0px;
+	WHITE-SPACE : inherit;
+	letter-spacing : 1px;
+}
 /* main copy */
 H4  {
 	COLOR: #336600;
