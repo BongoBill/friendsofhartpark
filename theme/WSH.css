@@ -560,3 +560,59 @@ TD#PowWowPerson
 	font-size : 18px;
 	font-family : "Caslon", "Times New Roman", serif;
 }
+h1.cowboyfest
+{
+	font-family : "Bodoni", "Times New Roman", serif;
+	text-indent: 20px;
+	text-align: center;
+	padding-left:  50px;
+	padding-right:  100px;
+	padding-top:  20px;
+	background-image: url("../images/midBar_L.gif");
+	background-repeat: no-repeat;
+	/*
+	background: 
+		url("../images/midBar_L.gif") no-repeat scroll left top content-box,
+		url("../images/close.gif") no-repeat scroll right center content-box,
+		url("../images/close.gif") no-repeat scroll left center content-box;
+	*/
+}
+h2.cowboyfest
+{
+	margin-left:	75px;
+	margin-right:	75px;
+	font-family : "Caslon", "Times New Roman", serif;
+}
+p.cowboyfest
+{
+	margin-left:	100px;
+	margin-right:	100px;
+	font-family : "Caslon", "Times New Roman", serif;
+}
+.markcowboyfest
+{
+	text-align:	right;
+	font-family : "Caslon", "Times New Roman", serif;
+	font-size:	120%;
+}
+header.cowboyfest
+{
+	margin-left:	100px;
+	margin-right:	100px;
+	margin-bottom:  25px;
+	font-size : 160%;
+	font-family : "Caslon", "Times New Roman", serif;
+}
+footer.cowboyfest
+{
+	color:  #111111;
+	margin-left:	100px;
+	margin-right:	100px;
+	margin-bottom:  25px;
+	font-size : 160%;
+	font-family : "Caslon", "Times New Roman", serif;
+}
+div#cowboyfest.carousel-container
+{
+	margin-left:	70px;
+}

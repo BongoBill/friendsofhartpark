@@ -9,75 +9,74 @@
       wow calendar, powwow calendar, powwows , pow wows , indians ,
       dancing, singing, music, crafts, beadwork, drums, drummers, arts">
     <link rel="stylesheet" type="text/css" href="../theme/WSH.css">
-    <link rel="stylesheet" href="../css/lightbox.css">
-	<link rel="shortcut icon" href="../images/fohp.ico">
+	<link rel="shortcut icon" href="../images/fohp.ico" />
     <title>Friends of Hart Park and Museum</title>
-    <script type="text/javascript" src="../js/prototype.js"></script>
-    <script type="text/javascript" src="../js/scriptaculous.js?load=effects,builder"></script>
-    <script type="text/javascript" src="../js/jquery-1.7.2.min.js"></script>
-    <script type="text/javascript" src="../js/lightbox.js"></script>
-    <script language="JavaScript" type="text/JavaScript">
-<!--
-function MM_preloadImages() { //v3.0
-  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
-    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
-    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
-}
-
-function MM_swapImgRestore() { //v3.0
-  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
-}
-
-function MM_findObj(n, d) { //v4.01
-  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
-    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
-  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
-  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
-  if(!x && d.getElementById) x=d.getElementById(n); return x;
-}
-    <title>Friends of Hart Park and Museum</title>
-    <script language="JavaScript" type="text/JavaScript">
-<!--
-function MM_preloadImages() { //v3.0
-  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
-    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
-    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
-}
-
-function MM_swapImgRestore() { //v3.0
-  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
-}
-
-function MM_findObj(n, d) { //v4.01
-  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
-    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
-  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
-  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
-  if(!x && d.getElementById) x=d.getElementById(n); return x;
-}
-
-function MM_swapImage() { //v3.0
-  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
-   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
-}
-//-->
-</script>
+    <link rel="stylesheet" href="../carousel/css/feature-carousel.css" charset="utf-8" />
+    <script src="../carousel/js/jquery-1.7.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../carousel/js/jquery.featureCarousel.min.js" type="text/javascript" charset="utf-8"></script>
     <script type="text/javascript">
+      $(document).ready(function() {
+        var carousel = $("#carousel").featureCarousel({
+          // include options like this:
+          // (use quotes only for string values, and no trailing comma after last option)
+          // option: value,
+          // option: value
+		  largeFeatureWidth: 1
+        });
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-20562630-1']);
-  _gaq.push(['_setDomainName', 'none']);
-  _gaq.push(['_setAllowLinker', true]);
-  _gaq.push(['_trackPageview']);
+        $("#but_prev").click(function () {
+          carousel.prev();
+        });
+        $("#but_pause").click(function () {
+          carousel.pause();
+        });
+        $("#but_start").click(function () {
+          carousel.start();
+        });
+        $("#but_next").click(function () {
+          carousel.next();
+        });
+      });
+    </script>
+    <script language="JavaScript" type="text/JavaScript">
+		function MM_preloadImages() { //v3.0
+		  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+			var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+			if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+		}
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+		function MM_swapImgRestore() { //v3.0
+		  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+		}
 
-</script>
+		function MM_findObj(n, d) { //v4.01
+		  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+			d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+		  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+		  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+		  if(!x && d.getElementById) x=d.getElementById(n); return x;
+		}
+
+		function MM_swapImage() { //v3.0
+		  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+		   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+		}
+	</script>
+    <script type="text/javascript">
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-20562630-1']);
+	  _gaq.push(['_setDomainName', 'none']);
+	  _gaq.push(['_setAllowLinker', true]);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	</script>
   </head>
+
   <body
 onload="MM_preloadImages('images/nav/bDay_B.gif','images/nav/bDay_R.gif','images/nav/fiesta_B.gif','images/nav/fiesta_R.gif','images/nav/hall_B.gif','images/nav/hall_R.gif','images/nav/man_B.gif','images/nav/man_R.gif','images/nav/mbr_B.gif','images/nav/mbr_R.gif','images/nav/out_B.gif','images/nav/out_R.gif','images/nav/post_B.gif','images/nav/post_R.gif','images/nav/pow_B.gif','images/nav/pow_R.gif','images/nav/silents_B.gif','images/nav/silents_R.gif','../images/nav/film_B.gif','../images/nav/film_R.gif')"
     style="background-color: rgb(32, 32, 25); background-image:
@@ -86,16 +85,13 @@ onload="MM_preloadImages('images/nav/bDay_B.gif','images/nav/bDay_R.gif','images
       cellspacing="0" width="996">
       <tbody>
         <tr>
-          <td background="../images/topBar_L.gif">
-            <table border="0" cellpadding="0" cellspacing="0">
+          <td background="../images/topBar_L.gif"> <table border="0" cellpadding="0" cellspacing="0">
               <tbody>
                 <tr>
                   <td width="50">&nbsp;</td>
                   <td width="896">
                     <div class="TTL" align="center">
-                      <p style="margin-top: 0"><font color="#800000">2013
-
-
+                      <p style="margin-top: 0"><font color="#800000">2014
                           Santa Clarita Cowboy Festival</font></p>
                     </div>
                   </td>
@@ -191,229 +187,145 @@ onload="MM_preloadImages('images/nav/bDay_B.gif','images/nav/bDay_R.gif','images
                       border="0" height="385" width="2"> </td>
                   <td valign="top" width="876">
                     <hr>
-<div id="titleside">
-<h3>Thanks to all who came to the</h3>
-<h2>2013 Santa Clarita Cowboy Festival</h2>
-<h4>Click on the thumbnails below to see pictures from the Hart-related
-events!</h4>
-</div>
-<div id="topside">
-<h2>Thursday Evening</h2>
-<h4>Unveiling of the newest Walk of Western Stars for Lee Marvin, Stuart Hamblen and Rodolfo Acosta</h4>
+<div class="cowboyfest">
 
-<a href="../images/CowboyFest2013/thursdayPM000.JPG" rel="lightbox[thursdayPM]" title="Walk of Western Stars Dedication">
-<img src="../images/CowboyFest2013/thumbs/thursdayPM000.JPG" alt="Walk of Western Stars Dedication"/></a>
-<a href="../images/CowboyFest2013/thursdayPM001.JPG" rel="lightbox[thursdayPM]" title="Walk of Western Stars Dedication">
-<img src="../images/CowboyFest2013/thumbs/thursdayPM001.JPG" alt="Walk of Western Stars Dedication"/></a>
-<a href="../images/CowboyFest2013/thursdayPM002.JPG" rel="lightbox[thursdayPM]" title="Walk of Western Stars Dedication">
-<img src="../images/CowboyFest2013/thumbs/thursdayPM002.JPG" alt="Walk of Western Stars Dedication"/></a>
-<a href="../images/CowboyFest2013/thursdayPM003.JPG" rel="lightbox[thursdayPM]" title="Walk of Western Stars Dedication">
-<img src="../images/CowboyFest2013/thumbs/thursdayPM003.JPG" alt="Walk of Western Stars Dedication"/></a>
-<a href="../images/CowboyFest2013/thursdayPM004.JPG" rel="lightbox[thursdayPM]" title="Walk of Western Stars Dedication">
-<img src="../images/CowboyFest2013/thumbs/thursdayPM004.JPG" alt="Walk of Western Stars Dedication"/></a>
-<a href="../images/CowboyFest2013/thursdayPM005.JPG" rel="lightbox[thursdayPM]" title="Walk of Western Stars Dedication">
-<img src="../images/CowboyFest2013/thumbs/thursdayPM005.JPG" alt="Walk of Western Stars Dedication"/></a>
-<a href="../images/CowboyFest2013/thursdayPM006.JPG" rel="lightbox[thursdayPM]" title="Walk of Western Stars Dedication">
-<img src="../images/CowboyFest2013/thumbs/thursdayPM006.JPG" alt="Walk of Western Stars Dedication"/></a>
-<a href="../images/CowboyFest2013/thursdayPM007.JPG" rel="lightbox[thursdayPM]" title="Walk of Western Stars Dedication">
-<img src="../images/CowboyFest2013/thumbs/thursdayPM007.JPG" alt="Walk of Western Stars Dedication"/></a>
-<a href="../images/CowboyFest2013/thursdayPM008.JPG" rel="lightbox[thursdayPM]" title="Walk of Western Stars Dedication">
-<img src="../images/CowboyFest2013/thumbs/thursdayPM008.JPG" alt="Walk of Western Stars Dedication"/></a>
-<a href="../images/CowboyFest2013/thursdayPM009.JPG" rel="lightbox[thursdayPM]" title="Walk of Western Stars Dedication">
-<img src="../images/CowboyFest2013/thumbs/thursdayPM009.JPG" alt="Walk of Western Stars Dedication"/></a>
-<a href="../images/CowboyFest2013/thursdayPM010.JPG" rel="lightbox[thursdayPM]" title="Walk of Western Stars Dedication">
-<img src="../images/CowboyFest2013/thumbs/thursdayPM010.JPG" alt="Walk of Western Stars Dedication"/></a>
-<a href="../images/CowboyFest2013/thursdayPM011.JPG" rel="lightbox[thursdayPM]" title="Walk of Western Stars Dedication">
-<img src="../images/CowboyFest2013/thumbs/thursdayPM011.JPG" alt="Walk of Western Stars Dedication"/></a>
-<a href="../images/CowboyFest2013/thursdayPM012.JPG" rel="lightbox[thursdayPM]" title="Walk of Western Stars Dedication">
-<img src="../images/CowboyFest2013/thumbs/thursdayPM012.JPG" alt="Walk of Western Stars Dedication"/></a>
-<a href="../images/CowboyFest2013/thursdayPM013.JPG" rel="lightbox[thursdayPM]" title="Walk of Western Stars Dedication">
-<img src="../images/CowboyFest2013/thumbs/thursdayPM013.JPG" alt="Walk of Western Stars Dedication"/></a>
-<a href="../images/CowboyFest2013/thursdayPM014.JPG" rel="lightbox[thursdayPM]" title="Walk of Western Stars Dedication">
-<img src="../images/CowboyFest2013/thumbs/thursdayPM014.JPG" alt="Walk of Western Stars Dedication"/></a>
-<a href="../images/CowboyFest2013/thursdayPM015.JPG" rel="lightbox[thursdayPM]" title="Walk of Western Stars Dedication">
-<img src="../images/CowboyFest2013/thumbs/thursdayPM015.JPG" alt="Walk of Western Stars Dedication"/></a>
-<a href="../images/CowboyFest2013/thursdayPM016.JPG" rel="lightbox[thursdayPM]" title="Walk of Western Stars Dedication">
-<img src="../images/CowboyFest2013/thumbs/thursdayPM016.JPG" alt="Walk of Western Stars Dedication"/></a>
-<a href="../images/CowboyFest2013/thursdayPM017.JPG" rel="lightbox[thursdayPM]" title="Walk of Western Stars Dedication">
-<img src="../images/CowboyFest2013/thumbs/thursdayPM017.JPG" alt="Walk of Western Stars Dedication"/></a>
-<a href="../images/CowboyFest2013/thursdayPM018.JPG" rel="lightbox[thursdayPM]" title="Walk of Western Stars Dedication">
-<img src="../images/CowboyFest2013/thumbs/thursdayPM018.JPG" alt="Walk of Western Stars Dedication"/></a>
-<a href="../images/CowboyFest2013/thursdayPM019.JPG" rel="lightbox[thursdayPM]" title="Walk of Western Stars Dedication">
-<img src="../images/CowboyFest2013/thumbs/thursdayPM019.JPG" alt="Walk of Western Stars Dedication"/></a>
-<a href="../images/CowboyFest2013/thursdayPM020.JPG" rel="lightbox[thursdayPM]" title="Walk of Western Stars Dedication">
-<img src="../images/CowboyFest2013/thumbs/thursdayPM020.JPG" alt="Walk of Western Stars Dedication"/></a>
-<a href="../images/CowboyFest2013/thursdayPM021.JPG" rel="lightbox[thursdayPM]" title="Walk of Western Stars Dedication">
-<img src="../images/CowboyFest2013/thumbs/thursdayPM021.JPG" alt="Walk of Western Stars Dedication"/></a>
-<a href="../images/CowboyFest2013/thursdayPM022.JPG" rel="lightbox[thursdayPM]" title="Walk of Western Stars Dedication">
-<img src="../images/CowboyFest2013/thumbs/thursdayPM022.JPG" alt="Walk of Western Stars Dedication"/></a>
-<a href="../images/CowboyFest2013/thursdayPM023.JPG" rel="lightbox[thursdayPM]" title="Walk of Western Stars Dedication">
-<img src="../images/CowboyFest2013/thumbs/thursdayPM023.JPG" alt="Walk of Western Stars Dedication"/></a>
-<a href="../images/CowboyFest2013/thursdayPM024.JPG" rel="lightbox[thursdayPM]" title="Walk of Western Stars Dedication">
-<img src="../images/CowboyFest2013/thumbs/thursdayPM024.JPG" alt="Walk of Western Stars Dedication"/></a>
-<a href="../images/CowboyFest2013/thursdayPM025.JPG" rel="lightbox[thursdayPM]" title="Walk of Western Stars Dedication">
-<img src="../images/CowboyFest2013/thumbs/thursdayPM025.JPG" alt="Walk of Western Stars Dedication"/></a>
-<a href="../images/CowboyFest2013/thursdayPM026.JPG" rel="lightbox[thursdayPM]" title="Walk of Western Stars Dedication">
-<img src="../images/CowboyFest2013/thumbs/thursdayPM026.JPG" alt="Walk of Western Stars Dedication"/></a>
-<a href="../images/CowboyFest2013/thursdayPM027.JPG" rel="lightbox[thursdayPM]" title="Walk of Western Stars Dedication">
-<img src="../images/CowboyFest2013/thumbs/thursdayPM027.JPG" alt="Walk of Western Stars Dedication"/></a>
-<a href="../images/CowboyFest2013/thursdayPM028.JPG" rel="lightbox[thursdayPM]" title="Walk of Western Stars Dedication">
-<img src="../images/CowboyFest2013/thumbs/thursdayPM028.JPG" alt="Walk of Western Stars Dedication"/></a>
-<a href="../images/CowboyFest2013/thursdayPM029.JPG" rel="lightbox[thursdayPM]" title="Walk of Western Stars Dedication">
-<img src="../images/CowboyFest2013/thumbs/thursdayPM029.JPG" alt="Walk of Western Stars Dedication"/></a>
-<a href="../images/CowboyFest2013/thursdayPM030.JPG" rel="lightbox[thursdayPM]" title="Walk of Western Stars Dedication">
-<img src="../images/CowboyFest2013/thumbs/thursdayPM030.JPG" alt="Walk of Western Stars Dedication"/></a>
-<a href="../images/CowboyFest2013/thursdayPM031.JPG" rel="lightbox[thursdayPM]" title="Walk of Western Stars Dedication">
-<img src="../images/CowboyFest2013/thumbs/thursdayPM031.JPG" alt="Walk of Western Stars Dedication"/></a>
-<a href="../images/CowboyFest2013/thursdayPM032.JPG" rel="lightbox[thursdayPM]" title="Walk of Western Stars Dedication">
-<img src="../images/CowboyFest2013/thumbs/thursdayPM032.JPG" alt="Walk of Western Stars Dedication"/></a>
-<a href="../images/CowboyFest2013/thursdayPM033.JPG" rel="lightbox[thursdayPM]" title="Walk of Western Stars Dedication">
-<img src="../images/CowboyFest2013/thumbs/thursdayPM033.JPG" alt="Walk of Western Stars Dedication"/></a>
-<a href="../images/CowboyFest2013/thursdayPM034.JPG" rel="lightbox[thursdayPM]" title="Walk of Western Stars Dedication">
-<img src="../images/CowboyFest2013/thumbs/thursdayPM034.JPG" alt="Walk of Western Stars Dedication"/></a>
-<a href="../images/CowboyFest2013/thursdayPM035.JPG" rel="lightbox[thursdayPM]" title="Walk of Western Stars Dedication">
-<img src="../images/CowboyFest2013/thumbs/thursdayPM035.JPG" alt="Walk of Western Stars Dedication"/></a>
-<a href="../images/CowboyFest2013/thursdayPM036.JPG" rel="lightbox[thursdayPM]" title="Walk of Western Stars Dedication">
-<img src="../images/CowboyFest2013/thumbs/thursdayPM036.JPG" alt="Walk of Western Stars Dedication"/></a>
-<a href="../images/CowboyFest2013/thursdayPM037.JPG" rel="lightbox[thursdayPM]" title="Walk of Western Stars Dedication">
-<img src="../images/CowboyFest2013/thumbs/thursdayPM037.JPG" alt="Walk of Western Stars Dedication"/></a>
+<header class="cowboyfest">
+This year, the Hart will feature more Cowboy Festival activities than ever before!  Be sure and join us by going to <a href="http://cowboyfestival.org" target="_blank">CowboyFestival.org</a> and getting your tickets pronto!  These events sell out!
+</header>
+    <div class="carousel-container" id="cowboyfest">
+    
+      <div id="carousel">
+        <div class="carousel-feature">
+          <a href="#"><img class="carousel-image" alt="Image Caption" src="cowboyfest2014/EJandKimi.jpg"></a>
+          <div class="carousel-caption">
+            <p>
+			Kim and E.J. Stephens
+            </p>
+            <p class="markcowboyfest">
+			Thursday morning, Friday morning &amp; afternoon
+            </p>
+          </div>
+        </div>
+        <div class="carousel-feature">
+          <a href="#"><img class="carousel-image" alt="Image Caption" src="cowboyfest2014/WyattAndTerryEarp.jpg"></a>
+          <div class="carousel-caption">
+            <p>
+			Terry &amp; Wyatt Earp
+            </p>
+            <p class="markcowboyfest">
+			Thursday evening
+            </p>
+          </div>
+        </div>
+        <div class="carousel-feature">
+          <a href="#"><img class="carousel-image" alt="Image Caption" src="cowboyfest2014/walkingTour.jpg"></a>
+          <div class="carousel-caption">
+            <p>
+			Walk of Western Stars and Hart Park walking tours
+            </p>
+            <p class="markcowboyfest">
+			Friday morning
+            </p>
+          </div>
+        </div>
+        <div class="carousel-feature">
+          <a href="#"><img class="carousel-image" alt="Image Caption" src="cowboyfest2014/Rogers.jpg"></a>
+          <div class="carousel-caption">
+            <p>
+			Cheryl Rogers Barnett
+            </p>
+            <p class="markcowboyfest">
+			Friday evening
+            </p>
+          </div>
+        </div>
+        <div class="carousel-feature">
+          <a href="#"><img class="carousel-image" alt="Image Caption" src="cowboyfest2014/LeonardMaltin.jpg"></a>
+          <div class="carousel-caption">
+            <p>
+			Leonard Maltin
+            </p>
+            <p class="markcowboyfest">
+			Friday evening
+            </p>
+          </div>
+        </div>
+        <div class="carousel-feature">
+          <a href="#"><img class="carousel-image" alt="Image Caption" src="cowboyfest2014/BelindaGail.jpg"></a>
+          <div class="carousel-caption">
+            <p>
+			Belinda Gail
+            </p>
+            <p class="markcowboyfest">
+			Saturday evening
+            </p>
+          </div>
+        </div>
+        <div class="carousel-feature">
+          <a href="#"><img class="carousel-image" alt="Image Caption" src="cowboyfest2014/JonChandler.jpg"></a>
+          <div class="carousel-caption">
+            <p>
+			Jon Chandler
+            </p>
+            <p class="markcowboyfest">
+			Saturday evening
+            </p>
+          </div>
+        </div>
+      </div>
+    
+      <div id="carousel-left"><img src="../carousel/images/arrow-left.png" /></div>
+      <div id="carousel-right"><img src="../carousel/images/arrow-right.png" /></div>
+    </div>
+<h1 class="cowboyfest">
+Thursday, April 24<sup>th</sup>
+</h1>
+<h2 class="cowboyfest">Morning: Western Film Tour - part 1</h2>
+<p class="cowboyfest">
+Departing from Hart Park will be an informative and entertaining tour of local Santa Clarita Valley film sites!  Not only cowboy films, but also get a chance to see the last location of the last movie of the silent era, the Charlie Chaplin comedy Classic <i>Modern Times</i>.  The tour is led by Friends of Hart Park board member, &ldquo;<i>SCV In The Movies</i>&rdquo; co-host, and film historian E.J. Stephens, along with his wife, author Kim Stephens.
+
+</p>
+<h2 class="cowboyfest">Evening: Mr. and Mrs. Wyatt Earp play</h2>
+<p class="cowboyfest">
+Meet and enjoy the real life Earp relatives as they perform their highly acclaimed, award winning play based on the true life stories of what happened in Tombstone and Wyatt and Josie&rsquo;s volatile relationship. Enjoy this amazing opportunity in the former living room of local cowboy/actor William S. Hart.
+</p>
+<h1 class="cowboyfest">
+Friday, April 25<sup>th</sup>
+</h1>
+<h2 class="cowboyfest">Morning: Walk of Western Star and William S. Hart museum and grounds Walking Tour</h2>
+<p class="cowboyfest">
+Start out in Hart Hall on the grounds of William S. Hart Park for a guided tour of old town Newhall&rsquo;s <em>Walk of Western Stars</em>.  Then enjoy an extensive tour of the grounds of William S. Hart&rsquo;s property, incuding his mansion, the ranch house where he lived before the mansion was built, and the surrounding grounds.  Top off the experience with lunch and a classic William S. Hart movie!
+
+</p>
+<h2 class="cowboyfest">Afternoon:  Western Film Tour - part 2</h2>
+<p class="cowboyfest">
+Again, join local film experts Kim and E.J. Stephens at Hart Park, where they lead you further afield to historical sites and movie locations not far from Santa Clarita.  Film and local history come alive when this friendly and informative couple tells you the stories behind the old west (both real and portrayed) in our area.
+
+</p>
+<h2 class="cowboyfest">Evening:  "Growing Up With Roy Rogers And Dale Evans&ldquo;</h2>
+<p class="cowboyfest">
+What a chance to get the inside scoop on Cowboy Hero Roy Rogers and his wife Dale Evans, by none other than their daughter, Cheryl Rogers Barnett!  Cheryl will be interviewed by legendary Hollywood historian and author, Mr. Leonard Maltin!  And of course, there will be time for Q&amp;A from the crowd!  As if that weren&rsquo;t enough, it all takes place in the living room of an earlier Cowboy Hero, William S. Hart.
+
+</p>
+<h1 class="cowboyfest">
+Saturday, April 26<sup>th</sup>
+</h1>
+<h2 class="cowboyfest">Evening:  Belinda Gail &amp; Jon Chandler, Alone &amp; Together</h2>
+<p class="cowboyfest">
+Belinda Gail, &ldquo;America&rsquo;s Western Sweetheart&rdquo;, will perform live in William S. Hart&rsquo;s living room, surrounded by Hart&rsquo;s collection of art and artifacts.  Ms. Gail is a top female Western Music performer, and was recently listed as one of the top 50 Country and Western Entertainers of all time by <i>American Cowboy Magazine</i>.
+</p>
+<p class="cowboyfest">
+As if that weren&rsquo;t enough, on the same bill we&rsquo;re proud to present, for the first time in the mansion, Jon Chandler, the &ldquo;Voice of the Colorado Rockies&rdquo;, who himself is widely regarded as one of the country&lsquo;s best western singer/songwriters. <p>
+</p>
+<p class="cowboyfest">
+We are all keeping our fingers crossed that these two icons of different aspects of country music will play some tunes together, for an evening that will be long remembered!
+
+</p>
+<footer class="cowboyfest">
+Please mosey on over to the <a href="http://cowboyfestival.org" target="_blank">Cowboy Festival Website</a> to get your tickets soon!
+</footer>
 </div>
-<div id="leftside">
-<h2>Friday Afternoon</h2>
-<h4>Walking Tour of The Walk of Western Stars, Hart Park and Hart Mansion. Tumbleweeds Screening</h4>
-<a href="../images/CowboyFest2013/fridayAM000.JPG" rel="lightbox[fridayAM]" title="Tours of Walk of Western Stars, Hart Park &amp; Museum; Tumbleweeds Screening">
-<img src="../images/CowboyFest2013/thumbs/fridayAM000.JPG" alt="Tours of Walk of Western Stars, Hart Park &amp; Museum; Tumbleweeds Screening"/></a>
-<a href="../images/CowboyFest2013/fridayAM001.JPG" rel="lightbox[fridayAM]" title="Tours of Walk of Western Stars, Hart Park &amp; Museum; Tumbleweeds Screening">
-<img src="../images/CowboyFest2013/thumbs/fridayAM001.JPG" alt="Tours of Walk of Western Stars, Hart Park &amp; Museum; Tumbleweeds Screening"/></a>
-<a href="../images/CowboyFest2013/fridayAM002.JPG" rel="lightbox[fridayAM]" title="Tours of Walk of Western Stars, Hart Park &amp; Museum; Tumbleweeds Screening">
-<img src="../images/CowboyFest2013/thumbs/fridayAM002.JPG" alt="Tours of Walk of Western Stars, Hart Park &amp; Museum; Tumbleweeds Screening"/></a>
-<a href="../images/CowboyFest2013/fridayAM003.JPG" rel="lightbox[fridayAM]" title="Tours of Walk of Western Stars, Hart Park &amp; Museum; Tumbleweeds Screening">
-<img src="../images/CowboyFest2013/thumbs/fridayAM003.JPG" alt="Tours of Walk of Western Stars, Hart Park &amp; Museum; Tumbleweeds Screening"/></a>
-<a href="../images/CowboyFest2013/fridayAM004.JPG" rel="lightbox[fridayAM]" title="Tours of Walk of Western Stars, Hart Park &amp; Museum; Tumbleweeds Screening">
-<img src="../images/CowboyFest2013/thumbs/fridayAM004.JPG" alt="Tours of Walk of Western Stars, Hart Park &amp; Museum; Tumbleweeds Screening"/></a>
-<a href="../images/CowboyFest2013/fridayAM005.JPG" rel="lightbox[fridayAM]" title="Tours of Walk of Western Stars, Hart Park &amp; Museum; Tumbleweeds Screening">
-<img src="../images/CowboyFest2013/thumbs/fridayAM005.JPG" alt="Tours of Walk of Western Stars, Hart Park &amp; Museum; Tumbleweeds Screening"/></a>
-<a href="../images/CowboyFest2013/fridayAM006.JPG" rel="lightbox[fridayAM]" title="Tours of Walk of Western Stars, Hart Park &amp; Museum; Tumbleweeds Screening">
-<img src="../images/CowboyFest2013/thumbs/fridayAM006.JPG" alt="Tours of Walk of Western Stars, Hart Park &amp; Museum; Tumbleweeds Screening"/></a>
-<a href="../images/CowboyFest2013/fridayAM007.JPG" rel="lightbox[fridayAM]" title="Tours of Walk of Western Stars, Hart Park &amp; Museum; Tumbleweeds Screening">
-<img src="../images/CowboyFest2013/thumbs/fridayAM007.JPG" alt="Tours of Walk of Western Stars, Hart Park &amp; Museum; Tumbleweeds Screening"/></a>
-<a href="../images/CowboyFest2013/fridayAM008.JPG" rel="lightbox[fridayAM]" title="Tours of Walk of Western Stars, Hart Park &amp; Museum; Tumbleweeds Screening">
-<img src="../images/CowboyFest2013/thumbs/fridayAM008.JPG" alt="Tours of Walk of Western Stars, Hart Park &amp; Museum; Tumbleweeds Screening"/></a>
-<a href="../images/CowboyFest2013/fridayAM009.JPG" rel="lightbox[fridayAM]" title="Tours of Walk of Western Stars, Hart Park &amp; Museum; Tumbleweeds Screening">
-<img src="../images/CowboyFest2013/thumbs/fridayAM009.JPG" alt="Tours of Walk of Western Stars, Hart Park &amp; Museum; Tumbleweeds Screening"/></a>
-<a href="../images/CowboyFest2013/fridayAM010.JPG" rel="lightbox[fridayAM]" title="Tours of Walk of Western Stars, Hart Park &amp; Museum; Tumbleweeds Screening">
-<img src="../images/CowboyFest2013/thumbs/fridayAM010.JPG" alt="Tours of Walk of Western Stars, Hart Park &amp; Museum; Tumbleweeds Screening"/></a>
-<a href="../images/CowboyFest2013/fridayAM011.JPG" rel="lightbox[fridayAM]" title="Tours of Walk of Western Stars, Hart Park &amp; Museum; Tumbleweeds Screening">
-<img src="../images/CowboyFest2013/thumbs/fridayAM011.JPG" alt="Tours of Walk of Western Stars, Hart Park &amp; Museum; Tumbleweeds Screening"/></a>
-<a href="../images/CowboyFest2013/fridayAM012.JPG" rel="lightbox[fridayAM]" title="Tours of Walk of Western Stars, Hart Park &amp; Museum; Tumbleweeds Screening">
-<img src="../images/CowboyFest2013/thumbs/fridayAM012.JPG" alt="Tours of Walk of Western Stars, Hart Park &amp; Museum; Tumbleweeds Screening"/></a>
-<a href="../images/CowboyFest2013/fridayAM013.JPG" rel="lightbox[fridayAM]" title="Tours of Walk of Western Stars, Hart Park &amp; Museum; Tumbleweeds Screening">
-<img src="../images/CowboyFest2013/thumbs/fridayAM013.JPG" alt="Tours of Walk of Western Stars, Hart Park &amp; Museum; Tumbleweeds Screening"/></a>
-<a href="../images/CowboyFest2013/fridayAM014.JPG" rel="lightbox[fridayAM]" title="Tours of Walk of Western Stars, Hart Park &amp; Museum; Tumbleweeds Screening">
-<img src="../images/CowboyFest2013/thumbs/fridayAM014.JPG" alt="Tours of Walk of Western Stars, Hart Park &amp; Museum; Tumbleweeds Screening"/></a>
-<a href="../images/CowboyFest2013/fridayAM015.JPG" rel="lightbox[fridayAM]" title="Tours of Walk of Western Stars, Hart Park &amp; Museum; Tumbleweeds Screening">
-<img src="../images/CowboyFest2013/thumbs/fridayAM015.JPG" alt="Tours of Walk of Western Stars, Hart Park &amp; Museum; Tumbleweeds Screening"/></a>
-<a href="../images/CowboyFest2013/fridayAM016.JPG" rel="lightbox[fridayAM]" title="Tours of Walk of Western Stars, Hart Park &amp; Museum; Tumbleweeds Screening">
-<img src="../images/CowboyFest2013/thumbs/fridayAM016.JPG" alt="Tours of Walk of Western Stars, Hart Park &amp; Museum; Tumbleweeds Screening"/></a>
-<a href="../images/CowboyFest2013/fridayAM017.JPG" rel="lightbox[fridayAM]" title="Tours of Walk of Western Stars, Hart Park &amp; Museum; Tumbleweeds Screening">
-<img src="../images/CowboyFest2013/thumbs/fridayAM017.JPG" alt="Tours of Walk of Western Stars, Hart Park &amp; Museum; Tumbleweeds Screening"/></a>
-<a href="../images/CowboyFest2013/fridayAM018.JPG" rel="lightbox[fridayAM]" title="Tours of Walk of Western Stars, Hart Park &amp; Museum; Tumbleweeds Screening">
-<img src="../images/CowboyFest2013/thumbs/fridayAM018.JPG" alt="Tours of Walk of Western Stars, Hart Park &amp; Museum; Tumbleweeds Screening"/></a>
-<a href="../images/CowboyFest2013/fridayAM019.JPG" rel="lightbox[fridayAM]" title="Tours of Walk of Western Stars, Hart Park &amp; Museum; Tumbleweeds Screening">
-<img src="../images/CowboyFest2013/thumbs/fridayAM019.JPG" alt="Tours of Walk of Western Stars, Hart Park &amp; Museum; Tumbleweeds Screening"/></a>
-<a href="../images/CowboyFest2013/fridayAM020.JPG" rel="lightbox[fridayAM]" title="Tours of Walk of Western Stars, Hart Park &amp; Museum; Tumbleweeds Screening">
-<img src="../images/CowboyFest2013/thumbs/fridayAM020.JPG" alt="Tours of Walk of Western Stars, Hart Park &amp; Museum; Tumbleweeds Screening"/></a>
-<a href="../images/CowboyFest2013/fridayAM021.JPG" rel="lightbox[fridayAM]" title="Tours of Walk of Western Stars, Hart Park &amp; Museum; Tumbleweeds Screening">
-<img src="../images/CowboyFest2013/thumbs/fridayAM021.JPG" alt="Tours of Walk of Western Stars, Hart Park &amp; Museum; Tumbleweeds Screening"/></a>
-<a href="../images/CowboyFest2013/fridayAM022.JPG" rel="lightbox[fridayAM]" title="Tours of Walk of Western Stars, Hart Park &amp; Museum; Tumbleweeds Screening">
-<img src="../images/CowboyFest2013/thumbs/fridayAM022.JPG" alt="Tours of Walk of Western Stars, Hart Park &amp; Museum; Tumbleweeds Screening"/></a>
-<a href="../images/CowboyFest2013/fridayAM023.JPG" rel="lightbox[fridayAM]" title="Tours of Walk of Western Stars, Hart Park &amp; Museum; Tumbleweeds Screening">
-<img src="../images/CowboyFest2013/thumbs/fridayAM023.JPG" alt="Tours of Walk of Western Stars, Hart Park &amp; Museum; Tumbleweeds Screening"/></a>
-<a href="../images/CowboyFest2013/fridayAM024.JPG" rel="lightbox[fridayAM]" title="Tours of Walk of Western Stars, Hart Park &amp; Museum; Tumbleweeds Screening">
-<img src="../images/CowboyFest2013/thumbs/fridayAM024.JPG" alt="Tours of Walk of Western Stars, Hart Park &amp; Museum; Tumbleweeds Screening"/></a>
-<a href="../images/CowboyFest2013/fridayAM025.JPG" rel="lightbox[fridayAM]" title="Tours of Walk of Western Stars, Hart Park &amp; Museum; Tumbleweeds Screening">
-<img src="../images/CowboyFest2013/thumbs/fridayAM025.JPG" alt="Tours of Walk of Western Stars, Hart Park &amp; Museum; Tumbleweeds Screening"/></a>
-<a href="../images/CowboyFest2013/fridayAM026.JPG" rel="lightbox[fridayAM]" title="Tours of Walk of Western Stars, Hart Park &amp; Museum; Tumbleweeds Screening">
-<img src="../images/CowboyFest2013/thumbs/fridayAM026.JPG" alt="Tours of Walk of Western Stars, Hart Park &amp; Museum; Tumbleweeds Screening"/></a>
-<a href="../images/CowboyFest2013/fridayAM027.JPG" rel="lightbox[fridayAM]" title="Tours of Walk of Western Stars, Hart Park &amp; Museum; Tumbleweeds Screening">
-<img src="../images/CowboyFest2013/thumbs/fridayAM027.JPG" alt="Tours of Walk of Western Stars, Hart Park &amp; Museum; Tumbleweeds Screening"/></a>
-<a href="../images/CowboyFest2013/fridayAM028.JPG" rel="lightbox[fridayAM]" title="Tours of Walk of Western Stars, Hart Park &amp; Museum; Tumbleweeds Screening">
-<img src="../images/CowboyFest2013/thumbs/fridayAM028.JPG" alt="Tours of Walk of Western Stars, Hart Park &amp; Museum; Tumbleweeds Screening"/></a>
-<a href="../images/CowboyFest2013/fridayAM029.JPG" rel="lightbox[fridayAM]" title="Tours of Walk of Western Stars, Hart Park &amp; Museum; Tumbleweeds Screening">
-<img src="../images/CowboyFest2013/thumbs/fridayAM029.JPG" alt="Tours of Walk of Western Stars, Hart Park &amp; Museum; Tumbleweeds Screening"/></a>
-<a href="../images/CowboyFest2013/fridayAM030.JPG" rel="lightbox[fridayAM]" title="Tours of Walk of Western Stars, Hart Park &amp; Museum; Tumbleweeds Screening">
-<img src="../images/CowboyFest2013/thumbs/fridayAM030.JPG" alt="Tours of Walk of Western Stars, Hart Park &amp; Museum; Tumbleweeds Screening"/></a>
-<a href="../images/CowboyFest2013/fridayAM031.JPG" rel="lightbox[fridayAM]" title="Tours of Walk of Western Stars, Hart Park &amp; Museum; Tumbleweeds Screening">
-<img src="../images/CowboyFest2013/thumbs/fridayAM031.JPG" alt="Tours of Walk of Western Stars, Hart Park &amp; Museum; Tumbleweeds Screening"/></a>
-<a href="../images/CowboyFest2013/fridayAM032.JPG" rel="lightbox[fridayAM]" title="Tours of Walk of Western Stars, Hart Park &amp; Museum; Tumbleweeds Screening">
-<img src="../images/CowboyFest2013/thumbs/fridayAM032.JPG" alt="Tours of Walk of Western Stars, Hart Park &amp; Museum; Tumbleweeds Screening"/></a>
-<a href="../images/CowboyFest2013/fridayAM033.JPG" rel="lightbox[fridayAM]" title="Tours of Walk of Western Stars, Hart Park &amp; Museum; Tumbleweeds Screening">
-<img src="../images/CowboyFest2013/thumbs/fridayAM033.JPG" alt="Tours of Walk of Western Stars, Hart Park &amp; Museum; Tumbleweeds Screening"/></a>
-<a href="../images/CowboyFest2013/fridayAM034.JPG" rel="lightbox[fridayAM]" title="Tours of Walk of Western Stars, Hart Park &amp; Museum; Tumbleweeds Screening">
-<img src="../images/CowboyFest2013/thumbs/fridayAM034.JPG" alt="Tours of Walk of Western Stars, Hart Park &amp; Museum; Tumbleweeds Screening"/></a>
-</div>
-<div id="rightside">
-<h2>Friday Evening</h2>
-<h4>An Evening of Music with Don Edwards</h4>
-<a href="../images/CowboyFest2013/fridayPM000.JPG" rel="lightbox[fridayPM]" title="An Evening of Music with Don Edwards">
-<img src="../images/CowboyFest2013/thumbs/fridayPM000.JPG" alt="An Evening of Music with Don Edwards"/></a>
-<a href="../images/CowboyFest2013/fridayPM001.JPG" rel="lightbox[fridayPM]" title="An Evening of Music with Don Edwards">
-<img src="../images/CowboyFest2013/thumbs/fridayPM001.JPG" alt="An Evening of Music with Don Edwards"/></a>
-<a href="../images/CowboyFest2013/fridayPM002.JPG" rel="lightbox[fridayPM]" title="An Evening of Music with Don Edwards">
-<img src="../images/CowboyFest2013/thumbs/fridayPM002.JPG" alt="An Evening of Music with Don Edwards"/></a>
-<a href="../images/CowboyFest2013/fridayPM003.JPG" rel="lightbox[fridayPM]" title="An Evening of Music with Don Edwards">
-<img src="../images/CowboyFest2013/thumbs/fridayPM003.JPG" alt="An Evening of Music with Don Edwards"/></a>
-<a href="../images/CowboyFest2013/fridayPM004.JPG" rel="lightbox[fridayPM]" title="An Evening of Music with Don Edwards">
-<img src="../images/CowboyFest2013/thumbs/fridayPM004.JPG" alt="An Evening of Music with Don Edwards"/></a>
-<a href="../images/CowboyFest2013/fridayPM005.JPG" rel="lightbox[fridayPM]" title="An Evening of Music with Don Edwards">
-<img src="../images/CowboyFest2013/thumbs/fridayPM005.JPG" alt="An Evening of Music with Don Edwards"/></a>
-<a href="../images/CowboyFest2013/fridayPM006.JPG" rel="lightbox[fridayPM]" title="An Evening of Music with Don Edwards">
-<img src="../images/CowboyFest2013/thumbs/fridayPM006.JPG" alt="An Evening of Music with Don Edwards"/></a>
-<a href="../images/CowboyFest2013/fridayPM007.JPG" rel="lightbox[fridayPM]" title="An Evening of Music with Don Edwards">
-<img src="../images/CowboyFest2013/thumbs/fridayPM007.JPG" alt="An Evening of Music with Don Edwards"/></a>
-<a href="../images/CowboyFest2013/fridayPM008.JPG" rel="lightbox[fridayPM]" title="An Evening of Music with Don Edwards">
-<img src="../images/CowboyFest2013/thumbs/fridayPM008.JPG" alt="An Evening of Music with Don Edwards"/></a>
-<a href="../images/CowboyFest2013/fridayPM009.JPG" rel="lightbox[fridayPM]" title="An Evening of Music with Don Edwards">
-<img src="../images/CowboyFest2013/thumbs/fridayPM009.JPG" alt="An Evening of Music with Don Edwards"/></a>
-<a href="../images/CowboyFest2013/fridayPM010.JPG" rel="lightbox[fridayPM]" title="An Evening of Music with Don Edwards">
-<img src="../images/CowboyFest2013/thumbs/fridayPM010.JPG" alt="An Evening of Music with Don Edwards"/></a>
-<a href="../images/CowboyFest2013/fridayPM011.JPG" rel="lightbox[fridayPM]" title="An Evening of Music with Don Edwards">
-<img src="../images/CowboyFest2013/thumbs/fridayPM011.JPG" alt="An Evening of Music with Don Edwards"/></a>
-<a href="../images/CowboyFest2013/fridayPM012.JPG" rel="lightbox[fridayPM]" title="An Evening of Music with Don Edwards">
-<img src="../images/CowboyFest2013/thumbs/fridayPM012.JPG" alt="An Evening of Music with Don Edwards"/></a>
-<a href="../images/CowboyFest2013/fridayPM013.JPG" rel="lightbox[fridayPM]" title="An Evening of Music with Don Edwards">
-<img src="../images/CowboyFest2013/thumbs/fridayPM013.JPG" alt="An Evening of Music with Don Edwards"/></a>
-<a href="../images/CowboyFest2013/fridayPM014.JPG" rel="lightbox[fridayPM]" title="An Evening of Music with Don Edwards">
-<img src="../images/CowboyFest2013/thumbs/fridayPM014.JPG" alt="An Evening of Music with Don Edwards"/></a>
-<a href="../images/CowboyFest2013/fridayPM015.JPG" rel="lightbox[fridayPM]" title="An Evening of Music with Don Edwards">
-<img src="../images/CowboyFest2013/thumbs/fridayPM015.JPG" alt="An Evening of Music with Don Edwards"/></a>
-</div>
-<div id="footside">
-<h2>Saturday Evening</h2>
-<h4>An Evening at Hart Mansion &mdash; The Riders in the Sky</h4>
-<a href="../images/CowboyFest2013/saturdayPM000.JPG" rel="lightbox[saturdayPM]" title="An Evening at Hart Mansion &mdash; The Riders in the Sky">
-<img src="../images/CowboyFest2013/thumbs/saturdayPM000.JPG" alt="An Evening at Hart Mansion &mdash; The Riders in the Sky"/></a>
-<a href="../images/CowboyFest2013/saturdayPM001.JPG" rel="lightbox[saturdayPM]" title="An Evening at Hart Mansion &mdash; The Riders in the Sky">
-<img src="../images/CowboyFest2013/thumbs/saturdayPM001.JPG" alt="An Evening at Hart Mansion &mdash; The Riders in the Sky"/></a>
-<a href="../images/CowboyFest2013/saturdayPM002.JPG" rel="lightbox[saturdayPM]" title="An Evening at Hart Mansion &mdash; The Riders in the Sky">
-<img src="../images/CowboyFest2013/thumbs/saturdayPM002.JPG" alt="An Evening at Hart Mansion &mdash; The Riders in the Sky"/></a>
-<a href="../images/CowboyFest2013/saturdayPM003.JPG" rel="lightbox[saturdayPM]" title="An Evening at Hart Mansion &mdash; The Riders in the Sky">
-<img src="../images/CowboyFest2013/thumbs/saturdayPM003.JPG" alt="An Evening at Hart Mansion &mdash; The Riders in the Sky"/></a>
-<a href="../images/CowboyFest2013/saturdayPM004.JPG" rel="lightbox[saturdayPM]" title="An Evening at Hart Mansion &mdash; The Riders in the Sky">
-<img src="../images/CowboyFest2013/thumbs/saturdayPM004.JPG" alt="An Evening at Hart Mansion &mdash; The Riders in the Sky"/></a>
-<a href="../images/CowboyFest2013/saturdayPM005.JPG" rel="lightbox[saturdayPM]" title="An Evening at Hart Mansion &mdash; The Riders in the Sky">
-<img src="../images/CowboyFest2013/thumbs/saturdayPM005.JPG" alt="An Evening at Hart Mansion &mdash; The Riders in the Sky"/></a>
-<a href="../images/CowboyFest2013/saturdayPM006.JPG" rel="lightbox[saturdayPM]" title="An Evening at Hart Mansion &mdash; The Riders in the Sky">
-<img src="../images/CowboyFest2013/thumbs/saturdayPM006.JPG" alt="An Evening at Hart Mansion &mdash; The Riders in the Sky"/></a>
-<a href="../images/CowboyFest2013/saturdayPM007.JPG" rel="lightbox[saturdayPM]" title="An Evening at Hart Mansion &mdash; The Riders in the Sky">
-<img src="../images/CowboyFest2013/thumbs/saturdayPM007.JPG" alt="An Evening at Hart Mansion &mdash; The Riders in the Sky"/></a>
-<a href="../images/CowboyFest2013/saturdayPM008.JPG" rel="lightbox[saturdayPM]" title="An Evening at Hart Mansion &mdash; The Riders in the Sky">
-<img src="../images/CowboyFest2013/thumbs/saturdayPM008.JPG" alt="An Evening at Hart Mansion &mdash; The Riders in the Sky"/></a>
-<a href="../images/CowboyFest2013/saturdayPM009.JPG" rel="lightbox[saturdayPM]" title="An Evening at Hart Mansion &mdash; The Riders in the Sky">
-<img src="../images/CowboyFest2013/thumbs/saturdayPM009.JPG" alt="An Evening at Hart Mansion &mdash; The Riders in the Sky"/></a>
-<a href="../images/CowboyFest2013/saturdayPM010.JPG" rel="lightbox[saturdayPM]" title="An Evening at Hart Mansion &mdash; The Riders in the Sky">
-<img src="../images/CowboyFest2013/thumbs/saturdayPM010.JPG" alt="An Evening at Hart Mansion &mdash; The Riders in the Sky"/></a>
-</div>
+</hr>
                   </td>
                   <td width="60"> &nbsp; </td>
                 </tr>
