@@ -1,0 +1,111 @@
+#bg {
+  background: url(birthday.jpg) no-repeat center top fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+TD#holiday {
+    text-align: center;
+    background-image: url(birthday1.jpg);
+    background-position: center top;
+    padding-top: 20px;
+    padding-left: 170px;
+    padding-right: 100px;
+    padding-bottom: 10px;
+    vertical-align: top;
+}
+h1#western {
+    font-family:    Palatino, serif;
+    font-style:     bold;
+    font-size:      32px;
+    color:          hsl(40,60%,100%);
+    text-align:     center;
+    }
+
+h1 {
+    font-family:    Verdana, sans-serif;
+    font-size:      48px;
+    line-height:    1.5;
+    text-align:     center;
+    color:          hsl(6, 67%, 52%)
+    }
+
+h2 {
+    font-family:    Georgia, serif;
+    font-size:      24px;
+    text-align:     center;
+    line-height:    1.5;
+    color:          hsl(186, 100%, 100%)
+}
+
+/* unvisited link */
+h2 a:link {
+    color: #00FF00;
+}
+
+/* visited link */
+h2 a:visited {
+    color: #00FF00;
+}
+
+/* mouse over link */
+h2 a:hover {
+    color: #FF0000;
+}
+
+/* selected link */
+h2 a:active {
+    color: #0000FF;
+}
+
+h3#indent {
+    text-indent:    50px;
+}
+
+h3 {
+    font-family:    Verdana, sans-serif;
+    font-size:      18px;
+    text-align:     center;
+    font-style:     italic;
+    color:          hsl(6, 72%, 42%);
+}
+h4 {
+    font-family:    "Merienda One", cursive, sans-serif;
+    font-size:      16px;
+    text-align:     center;
+    line-height:    1.5;
+    color:          hsl(6, 100%, 42%);
+}
+h4#bolder {
+    font-family:    "Merienda One", cursive, sans-serif;
+    font-size:      18px;
+    text-align:     center;
+    line-height:    1.5;
+    color:          hsl(6, 100%, 42%);
+}
+
+footer {
+    font-family:    "Fauna One", Bodoni, serif;
+    font-size:      12px;
+    color:          hsl(6, 100%, 11%)
+}
+
+section {
+    background-color:   hsla(2, 100%, 98%, 0.6);
+    height:             170px;
+    clear:              both;
+}
+
+img#left {
+    background-color:   hsl(62, 100%, 78%)
+    display:            inline;
+    float:              left;
+}
+
+img#right {
+    background-color:   hsl(62, 100%, 78%)
+    display:            inline;
+    float:              right;
+}
+
