@@ -74,6 +74,36 @@ p.lots
 	padding: 0px ;
 	margin: 8px 4px 8px 0px;
 }
+h1.silents
+{
+    text-align: center;
+    font-style: italic;
+    color: #FF0000;
+}
+h2.silents
+{
+    text-align: center;
+    font-style: italic;
+    color: #FF6600;
+}
+#silentsleftthird {
+	color: #009900;
+	float:left;
+	width:210px;
+	padding: 0px ;
+	margin: 8px 0px 8px 4px;
+}
+#silentsrightthird {
+	color: #009900;
+	float:right;
+	width:210px;
+	padding: 0px ;
+	margin: 8px 4px 8px 0px;
+}
+.centeredImage {
+    text-align:center;
+    display:block;
+}
 #footthird {
 	color : #CC6600;
 	text-align: center;
