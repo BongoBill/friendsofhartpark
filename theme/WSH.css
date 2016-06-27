@@ -89,14 +89,14 @@ h2.silents
 #silentsleftthird {
 	color: #009900;
 	float:left;
-	width:210px;
+	width:300px;
 	padding: 0px ;
 	margin: 8px 0px 8px 4px;
 }
 #silentsrightthird {
 	color: #009900;
 	float:right;
-	width:210px;
+	width:300px;
 	padding: 0px ;
 	margin: 8px 4px 8px 0px;
 }
