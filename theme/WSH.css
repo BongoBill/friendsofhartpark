@@ -2,6 +2,9 @@
 .bold  {
 	font-weight : bold;
 }
+/* cheap new window icon -- need better solution*/
+/* a[target='_blank']::after {content: '\29C9';} */
+
 /* default? */
 p.lots
 {
