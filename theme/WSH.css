@@ -77,6 +77,13 @@ p.lots
 	padding: 0px ;
 	margin: 8px 4px 8px 0px;
 }
+#righttwothirds {
+	color: #009900;
+	float:right;
+	width:700px;
+	padding: 0px ;
+	margin: 8px 4px 8px 0px;
+}
 h1.silents
 {
     text-align: center;
@@ -100,6 +107,20 @@ h2.silents
 	color: #009900;
 	float:right;
 	width:300px;
+	padding: 0px ;
+	margin: 8px 4px 8px 0px;
+}
+#silentsrighttwothirds {
+	color: #009900;
+	float:right;
+	width:600px;
+	padding: 0px ;
+	margin: 8px 4px 8px 0px;
+}
+#silentsrighthalf {
+	color: #009900;
+	float:right;
+	width:400px;
 	padding: 0px ;
 	margin: 8px 4px 8px 0px;
 }
