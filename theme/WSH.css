@@ -96,6 +96,11 @@ h2.silents
     font-style: italic;
     color: #FF6600;
 }
+p.silents
+{
+    text-align: left;
+    color: #FF6600;
+}
 #silentsleftthird {
 	color: #009900;
 	float:left;
