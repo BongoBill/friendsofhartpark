@@ -98,6 +98,10 @@ h2.silents
 }
 p.silents
 {
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
     text-align: left;
     color: #FF6600;
 }
