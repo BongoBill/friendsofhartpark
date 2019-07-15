@@ -678,3 +678,15 @@ div#cowboyfest.carousel-container
 {
 	margin-left:	70px;
 }
+button {
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    font-size: 16px;
+    background-color: #c80000;
+    color: #ffffff;
+    border-radius: 8px;
+}
+button:hover { 
+    font-size: 18px;
+    box-shadow: 10px 10px 10px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19); }
+
