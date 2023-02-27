@@ -84,6 +84,20 @@ p.lots
 	padding: 0px ;
 	margin: 8px 4px 8px 0px;
 }
+#mainlefttwothirds {
+	color: #009900;
+	float:left;
+	width:333px;
+	padding: 0px ;
+	margin: 2px 2px 2px 4px;
+}
+#mainrightthird {
+	color: #009900;
+	float:right;
+	width:167px;
+	padding: 0px ;
+	margin: 2px 4px 2px 2px;
+}
 h1.silents
 {
     text-align: center;
