@@ -1,4 +1,7 @@
 RewriteEngine On
-RewriteCond %{HTTPS} !=on
-RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301] 
-# RedirectMatch 301 ^{HTTP_HOST}/powwow /Event_Pages/powwow.html [NC,L]
+
+RewriteCond %{HTTP_HOST} ^friendsofhartpark\.org [NC]
+RewriteRule ^silents$ /Event_pages/silents.html [L,R=301]
+
+RewriteCond %{HTTP_HOST} ^friendsofhartpark\.com [NC]
+RewriteRule ^silents$ /Event_pages/silents.html [L,R=301]
