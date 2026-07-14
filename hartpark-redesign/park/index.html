@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Park - Friends of Hart Park</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="shortcut icon" href="../images/fohp.ico">
+  <style>
+    /* Two-Column Dashboard Layout */
+    .park-dashboard {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 30px;
+      margin-top: 20px;
+    }
+    
+    @media (min-width: 850px) {
+      .park-dashboard {
+        grid-template-columns: 350px 1fr; /* Operational sidebar + big map layout */
+      }
+    }
+
+    /* Hours & Information Card */
+    .info-panel {
+      background: #fdfcf7;
+      border: 1px solid #e6e4d5;
+      padding: 25px;
+      border-radius: 6px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      height: fit-content;
+    }
+    
+    .info-panel h3 {
+      color: #7a2021;
+      margin-top: 0;
+      border-bottom: 2px solid #7a2021;
+      padding-bottom: 10px;
+    }
+
+    .hours-block {
+      background: #fff;
+      border-left: 4px solid #7a2021;
+      padding: 12px 15px;
+      margin: 15px 0;
+      border-radius: 0 4px 4px 0;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+    }
+
+    .hours-block p {
+      margin: 4px 0;
+    }
+
+    .closure-alert {
+      font-size: 0.9rem;
+      color: #c92a2a;
+      background: #fff5f5;
+      padding: 10px;
+      border-radius: 4px;
+      border: 1px solid #ffc9c9;
+      margin-top: 15px;
+    }
+
+    /* Map Showcase Container */
+    .map-container {
+      background: #fff;
+      padding: 10px;
+      border-radius: 6px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      border: 1px solid #e6e4d5;
+    }
+
+    .map-container img {
+      display: block;
+      width: 100%;
+      height: auto; /* Preserves Tim's full border and hand-drawn layout perfectly */
+      border-radius: 4px;
+    }
+
+    .map-caption {
+      text-align: center;
+      font-style: italic;
+      color: #666;
+      font-size: 0.9rem;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+
+<script>
+  function openLightbox(imgSrc) {
+    document.getElementById('lightboxTargetImg').src = imgSrc;
+    document.getElementById('customLightbox').style.display = "block";
+  }
+
+  function closeLightbox() {
+    document.getElementById('customLightbox').style.display = "none";
+  }
+</script>
+
+<body>
+
+<div class="site-wrapper">
+
+  <!-- Header Section -->
+  <header>
+    <div class="brand-container">
+      <a href="../index.html" class="brand-link" title="Return to Homepage">
+        <img src="../images/hart-emblem.png" alt="Friends of Hart Park Emblem" class="header-logo">
+      </a>
+      <h1 class="site-title">The Friends of Hart Park and Museum</h1>
+      <div class="header-spacer"></div>
+    </div>
+  </header>
+
+  <!-- Global Navigation Header -->
+  <nav>
+    <ul>
+      <li><a href="../park/" class="active">The Park</a></li>
+      <li><a href="../mansion/">The Mansion</a></li>
+      <li><a href="../barnyard/">Barnyard</a></li>
+      <li><a href="../hart-hall/">Hart Hall</a></li>
+      <li><a href="../trading-post/">Trading Post</a></li>
+      <li><a href="../events/powwow.html">Powwow</a></li>
+      <li><a href="../events/silents.html">Silents</a></li>
+    </ul>
+  </nav>
+
+  <!-- Reusing your existing Homepage Lightbox Structure -->
+  <!-- Reusing your global Homepage Lightbox Structure -->
+  <div id="customLightbox" class="lightbox-modal" onclick="closeLightbox()">
+    <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+    <img class="lightbox-content" id="lightboxTargetImg" alt="Enlarged View">
+  </div>
+
+  <!-- Main Content Layout -->
+  <main class="main-container">
+    
+    <h2>Explore William S. Hart Park</h2>
+    <p>Spanning hundreds of acres of beautiful wilderness, scenic trails, and historical treasures, William S. Hart Park stands as a premier community refuge and preservation heritage site in Santa Clarita.</p>
+
+    <div class="park-dashboard">
+      
+      <!-- Left Column: Operations & Hours Panel -->
+      <aside class="info-panel">
+        <h3>Plan Your Visit</h3>
+        
+        <p><strong>General Admission:</strong> Free!</p>
+        
+        <h4>Seasonal Park Hours</h4>
+        
+        <div class="hours-block">
+          <p style="font-weight: bold; color: #7a2021;">🍂 October – April Hours</p>
+          <p>8:00 a.m. – 5:00 p.m.</p>
+        </div>
+
+        <div class="hours-block">
+          <p style="font-weight: bold; color: #7a2021;">☀️ May – September Hours</p>
+          <p>8:00 a.m. – 8:00 p.m.</p>
+        </div>
+
+        <h4>Holiday Schedule</h4>
+        <div class="hours-block">
+          <p><strong>Christmas Eve & New Year's Eve:</strong></p>
+          <p>8:00 a.m. – 12:00 p.m. (Half Day)</p>
+        </div>
+
+        <div class="closure-alert">
+          <strong>🚫 Park Holiday Closures:</strong><br>
+          Closed entirely on Thanksgiving Day, Christmas Day, and New Year’s Day.
+        </div>
+      </aside>
+
+      <!-- Right Column: Full-Size Illustrated Property Map -->
+      <section class="map-container">
+        <img src="../images/hart-park/parkmap.jpg"
+             alt="William S. Hart Park and Museum Illustrated Fun Map by Tim Murphy"
+             onclick="openLightbox(this.src)"
+             style="cursor: zoom-in;">
+        <div class="map-caption">
+          "Horseshoe Ranch" Property Map — designed and created by former volunteer Tim Murphy.
+        </div>
+      </section>
+
+    </div>
+
+  </main>
+
+  <!-- Global Footer -->
+  <footer>
+    <div class="footer-nav">
+      <a href="../index.html">Home</a> | 
+      <a href="../organization/friends.html">Organization</a> | 
+      <a href="../newsletters/newsletters.html">Newsletters</a> | 
+      <a href="../links.html">Links</a> | 
+      <a href="../contact/contact.html">Contact Us</a>
+    </div>
+    <div class="copyright">
+      <p>Powered by <a href="https://friendsofhartpark.org">friendsofhartpark.org</a>. All rights reserved.</p>
+    </div>
+  </footer>
+
+</div>
+
+</body>
+</html>

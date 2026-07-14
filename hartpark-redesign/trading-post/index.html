@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Trading Post Gift Shop - Friends of Hart Park</title>
+  <!-- Points up one level to inherit the unified master design styles -->
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="shortcut icon" href="../images/fohp.ico">
+  <style>
+    /* Custom Styling for the Merch / Trading Post Hub */
+    .store-hero {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .store-hero h2 {
+      color: #770000;
+      font-family: 'Georgia', serif;
+      margin-top: 5px;
+    }
+    .wire-divider {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: 20px auto;
+    }
+    .store-main-img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      border-radius: 6px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      margin: 0 auto 25px auto;
+    }
+    /* Three-Column Info Matrix */
+    .trading-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+      margin-top: 30px;
+    }
+    .trading-card {
+      background-color: #fbfbfa;
+      padding: 25px;
+      border-radius: 6px;
+      border: 1px solid var(--border-color);
+    }
+    .trading-card h3 {
+      color: var(--brand-burgundy);
+      margin-top: 0;
+      font-family: 'Georgia', serif;
+      border-bottom: 1px dashed var(--border-color);
+      padding-bottom: 8px;
+      margin-bottom: 15px;
+    }
+    .trading-card p {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      color: var(--text-dark);
+      margin-bottom: 15px;
+    }
+    .manager-signoff {
+      margin-top: 25px;
+      text-align: right;
+      font-style: italic;
+      font-size: 0.9rem;
+      color: #555;
+      line-height: 1.4;
+    }
+  </style>
+</head>
+<body>
+
+<div class="site-wrapper">
+
+  <!-- Header Section -->
+  <header>
+    <div class="brand-container">
+      <a href="../index.html" class="brand-link" title="Return to Homepage">
+        <img src="../images/hart-emblem.png" alt="Friends of Hart Park Emblem" class="header-logo">
+      </a>
+      <h1 class="site-title">The Trading Post</h1>
+      <div class="header-spacer"></div>
+    </div>
+  </header>
+
+  <!-- Navigation Bar (Paths routed perfectly relative to the Trading_Post folder) -->
+  <nav>
+    <ul>
+      <li><a href="../park/">The Park</a></li>
+      <li><a href="../mansion/">The Mansion</a></li>
+      <li><a href="../barnyard/">Barnyard</a></li>
+      <li><a href="../hart-hall/">Hart Hall</a></li>
+      <li><a href="../trading-post/" class="active">Trading Post</a></li>
+      <li><a href="../events/powwow.html">Powwow</a></li>
+      <li><a href="../events/silents.html">Silents</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content Area -->
+  <main class="main-container">
+    
+    <div class="store-hero">
+      <h2 style="font-size: 2rem; text-transform: uppercase; letter-spacing: 1px;">The Trading Post Gift Shop</h2>
+      <p style="font-style: italic; color: #555; margin-bottom: 20px;">William S. Hart Park and Museum</p>
+      
+      <!-- Hours Graphic & Barbed Wire Framing -->
+      <img src="TradingPostHours_sm.png" alt="Trading Post Operating Hours" style="max-width: 100%; height: auto;">
+      <img src="../images/BarbedWire3.png" alt="Barbed Wire Divider" class="wire-divider">
+    </div>
+
+    <!-- Responsive Three-Column Grid Setup -->
+    <div class="trading-grid">
+      
+      <!-- Column 1: Core Selection Overview -->
+      <div class="trading-card">
+        <h3>Our Collection</h3>
+        <p>The Gift Store is stocked with a wide variety of unique merchandise including Western themed books, music, movies, jewelry, purses, home decorations, fine artwork, and classic toys, alongside a selection of cold drinks and snacks.</p>
+        <p>Of special interest to historic film enthusiasts is our collection of Bill Hart memorabilia. We carry DVD copies of more than 15 of his classic silent films, souvenir mugs, custom apparel, and original prints.</p>
+      </div>
+
+      <!-- Column 2: Exclusive Literature Highlights -->
+      <div class="trading-card">
+        <h3>Featured Editions</h3>
+        <p>We feature high-quality printings of classic historical volumes, including the excellent 2013 reproduction of William S. Hart's autobiography, <em>"My Life East & West"</em> (originally published in 1929).</p>
+        <p>A limited edition of the definitive softcover volume <em>"The Complete Films of William S. Hart"</em> is also available, providing rare production photographs and historical overviews of every single project in his historic career.</p>
+        <div class="manager-signoff">
+          The Gift Store Staff<br>
+          <strong>Becki Basham</strong><br>
+          Gift Store Manager
+        </div>
+      </div>
+
+      <!-- Column 3: Logistics & Plan Your Visit -->
+      <div class="trading-card">
+        <h3>Plan Your Visit</h3>
+        <p><strong>Operating Hours:</strong> Saturdays 10am to 2pm, weather permitting. Also open during special Park Events and by appointment for private tours or school field trips.</p>
+        <p><strong>Location:</strong> Conveniently located near the main Park entrance, directly nestled between the historic Ranch House and Hart Hall, right next to the animal pens.</p>
+        <p><strong>Supporting the Park:</strong> Every dollar spent at the Trading Post goes directly to the Friends of Hart Park, funding ongoing care for our park animals, structural upgrades, and public community events.</p>
+      </div>
+
+    </div>
+
+    <!-- Bottom Framing Graphic -->
+    <div style="text-align: center; margin-top: 20px;">
+      <img src="../images/BarbedWire3.png" alt="Barbed Wire Divider" class="wire-divider">
+      <p style="font-size: 0.85rem; color: #777; font-style: italic;">Friends of Hart Park and Museum is a California Non-Profit Corporation Section 501(c)(3)</p>
+    </div>
+
+  </main>
+
+  <!-- Unified Global Footer -->
+  <footer>
+    <div class="footer-nav">
+      <a href="../index.html">Home</a> | 
+      <a href="../The_Friends/fhp_organization.html">Organization</a> | 
+      <a href="../Newsletters/newsletters.html">Newsletters</a> | 
+      <a href="../links.html">Links</a> | 
+      <a href="../Contact/contact.html">Contact Us</a>
+    </div>
+    <div class="copyright">
+      <p>Powered by <a href="https://friendsofhartpark.org" target="_blank" style="color: #555; text-decoration: none; font-weight: bold;">friendsofhartpark.org</a>. All rights reserved.</p>
+    </div>
+  </footer>
+
+</div>
+
+</body>
+</html>

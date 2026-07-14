@@ -1,0 +1,412 @@
+/* Modern Reset & Theme Variables */
+:root {
+  --wood-bg: #202019;
+  --paper-bg: #f6f5ee;
+  --brand-burgundy: #6c0101;
+  --header-leather: #3d2b1f; /* Warm, rich saddle-leather brown that matches the emblem */
+  --text-dark: #2f2f28;
+  --text-cream: #f4eedb; /* Sun-faded parchment/cream tone for a vintage look */
+  --accent-gold: #d4af37;
+  --border-color: #d1cebd;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Georgia', serif;
+  background-color: var(--wood-bg);
+  background-image: url("../images/202019_back.gif");
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+/* Base Wrapper */
+.site-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: var(--paper-bg);
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+/* Header & Brand Layout - Styled for an authentic heritage feel */
+header {
+  background-color: var(--header-leather);
+  padding: 15px 20px;
+  border-bottom: 4px solid var(--brand-burgundy);
+}
+
+.brand-container {
+  display: grid;
+  grid-template-columns: 80px 1fr 80px; /* Perfectly balances the logo layout */
+  align-items: center;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.brand-link {
+  display: flex;
+  justify-content: flex-start;
+  transition: transform 0.2s ease;
+}
+
+.brand-link:hover {
+  transform: scale(1.05);
+}
+
+.header-logo {
+  display: block;
+  width: auto;
+  height: 60px;
+  background-color: var(--text-cream); /* Smoothly pulls the title's cream color behind the emblem */
+  border-radius: 50%; /* Makes the background perfectly circular to match the emblem shape */
+  padding: 4px; /* Gives the logo a sliver of breathing room inside its frame */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Adds a subtle depth to make it stand out on the dark wood */
+  transition: transform 0.2s ease;
+}
+
+.site-title {
+  font-size: 2.1rem;
+  font-weight: bold;
+  color: var(--text-cream); /* Warm vintage cream */
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8); /* Darker shadow to give a branded/stamped effect */
+  text-align: center;
+  margin: 0;
+}
+
+.header-spacer {
+  width: 80px; /* Invisible element that mirrors the logo box width to force text center anchoring */
+}
+
+/* Modern Responsive Navigation Bar - Enforced Single-Line Layout */
+nav {
+  background-image: url("../images/navBar_L.gif");
+  background-repeat: repeat-x; /* Completely stops the vertical "triple seam" tiling */
+  background-position: center;
+  border-bottom: 2px solid var(--border-color);
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around; /* Dynamically spreads buttons evenly across the single line */
+  align-items: center;
+}
+
+nav ul li {
+  flex: 1;
+  text-align: center;
+}
+
+nav ul li a {
+  display: block;
+  padding: 14px 10px;
+  color: var(--brand-burgundy);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.85rem; /* Marginally downsized text to guarantee single-line fitment */
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  white-space: nowrap; /* Forces browser to keep words like "TRADING POST" on one line */
+  transition: background 0.2s;
+}
+
+nav ul li a:hover {
+  background-color: rgba(108, 1, 1, 0.1);
+  color: #a00202;
+}
+
+/* Highlight the current page link in the navigation menu */
+nav ul li a.active {
+  background-color: var(--header-leather); /* Flawless saddle-leather brown match */
+  color: var(--text-cream);            /* Uses the authentic vintage cream text */
+  font-weight: bold;
+  border-radius: 4px 4px 0 0;          /* Keeps the top rounded, bottom flat */
+}
+
+/* Cinematic Full-Width Hero Section */
+.hero-section {
+  position: relative;
+  width: 100%;
+  max-height: 450px;
+  overflow: hidden;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Main Content Area */
+.main-container {
+  padding: 30px;
+}
+
+/* Events Grid - Dynamic Cards */
+.events-section {
+  margin-bottom: 40px;
+}
+
+.section-title {
+  color: var(--brand-burgundy);
+  border-bottom: 2px solid var(--brand-burgundy);
+  padding-bottom: 8px;
+  margin-top: 0;
+}
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.event-card {
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.event-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 2px;
+}
+
+.event-card h3 {
+  margin: 10px 0 5px 0;
+  color: var(--brand-burgundy);
+}
+
+.event-date {
+  font-style: italic;
+  font-weight: bold;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+/* Boilerplate & Footer Modules (3-Column Layout) */
+/* Boilerplate & Social Media Footer Modules (2-Column Layout) */
+.boilerplate-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 40px;
+  background-color: #f0ede2;
+  padding: 30px;
+  border-top: 2px solid var(--border-color);
+  margin-top: 40px;
+}
+
+.info-meta-column {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.info-block {
+  font-size: 0.95rem;
+}
+
+.info-block h3 {
+  color: var(--brand-burgundy);
+  margin-top: 0;
+  border-bottom: 1px dashed var(--border-color);
+  padding-bottom: 5px;
+}
+
+.donation-block {
+  background: rgba(255,255,255,0.4);
+  padding: 15px;
+  border-radius: 4px;
+  border: 1px solid var(--border-color);
+  text-align: center;
+}
+
+.facebook-feed-column h3 {
+  color: var(--brand-burgundy);
+  margin-top: 0;
+  border-bottom: 1px dashed var(--border-color);
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+.fb-container {
+  width: 100%;
+  max-width: 340px;
+  margin: 0 auto;
+}
+
+.info-block h3 {
+  color: var(--brand-burgundy);
+  margin-top: 0;
+}
+
+/* Global Footer Styles */
+footer {
+  background-image: url("../images/footBar_L.gif");
+  color: var(--brand-burgundy);
+  text-align: center;
+  padding: 20px;
+  border-top: 4px solid var(--brand-burgundy);
+}
+
+.footer-nav {
+  margin-bottom: 10px;
+}
+
+.footer-nav a {
+  color: var(--brand-burgundy);
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+.footer-nav a:hover {
+  text-decoration: underline;
+}
+
+.copyright {
+  font-size: 0.8rem;
+  color: #555;
+}
+
+/* Global Lightbox Modal Styles */
+.lightbox-modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  padding-top: 20px; /* Reduced padding to give the image more vertical room */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.95); /* Marginally darker backdrop for better text contrast */
+}
+
+.lightbox-content {
+  margin: auto;
+  display: block;
+  max-width: 96%;   /* Expanded from 85% to fill almost the entire width */
+  max-height: 94vh; /* Expanded from 85vh to utilize almost the entire vertical screen */
+  object-fit: contain; /* Mandates the browser preserve Tim's map proportions perfectly */
+  box-shadow: 0 4px 25px rgba(0,0,0,0.6);
+  border-radius: 4px;
+
+  /* The Animation Magic Hook */
+  animation: lightboxGrow 0.25s ease-out forwards;
+}
+
+/* Smooth Scale & Fade-in Animation Engine */
+@keyframes lightboxGrow {
+  from {
+    transform: scale(0.92);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  color: #f1f1f1;
+  font-size: 45px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+  z-index: 10000; /* Guarantees the "X" stays layered on top of the expanded map image */
+}
+
+.lightbox-close:hover {
+  color: var(--accent-gold);
+}
+/* Clean, Calmed-Down Event Date Layout */
+.event-date-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 25px 0 10px 0;
+
+  /* Typography hierarchy that doesn't scream or compete */
+  font-family: 'Georgia', serif;
+  font-size: 1.15rem;
+  font-weight: bold;
+  font-style: normal;
+  color: var(--brand-burgundy);
+  letter-spacing: 0.3px;
+}
+
+/* Light, crisp calendar icons matching your theme colors */
+.date-icon {
+  width: 18px;
+  height: 18px;
+  color: var(--brand-burgundy);
+  opacity: 0.85;
+}
+
+/* Announcement Box Container */
+.announcement-box {
+  background-color: #fbfbfa; 
+  border: 2px dashed var(--brand-burgundy); 
+  padding: 40px 20px; 
+  border-radius: 8px; 
+  margin-bottom: 40px; 
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.announcement-title {
+  color: var(--brand-burgundy); 
+  font-size: 1.8rem; 
+  margin-top: 0; 
+  font-family: 'Georgia', serif;
+}
+
+.announcement-text {
+  font-size: 1.1rem; 
+  max-width: 600px; 
+  margin: 15px auto; 
+  line-height: 1.6; 
+  color: var(--text-dark);
+}
+
+/* Primary Highlighted Date Line */
+.event-date-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 25px 0 10px 0;
+  font-family: 'Georgia', serif;
+  font-size: 1.15rem;
+  font-weight: bold;
+  color: var(--brand-burgundy); 
+  letter-spacing: 0.3px;
+}
+
+.date-icon {
+  width: 18px;
+  height: 18px;
+  color: var(--brand-burgundy);
+  opacity: 0.85;
+}
+
+/* Calmed-Down Subordinate Update Line */
+.event-update-line {
+  font-family: 'Georgia', serif;
+  font-size: 1rem; 
+  font-weight: normal; 
+  font-style: italic;
+  color: var(--text-dark); 
+  margin-top: 15px; 
+}
+

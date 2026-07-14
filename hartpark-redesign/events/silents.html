@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Silents Under the Stars - Friends of Hart Park</title>
+  <!-- Points up one directory to share the master stylesheet engine -->
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="shortcut icon" href="../images/fohp.ico">
+  <style>
+    /* Special Layout Overrides for the Silents Event Page */
+    .silents-layout {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 40px;
+      align-items: start;
+      margin-top: 30px;
+    }
+    .flyer-column img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+    .details-column {
+      background-color: #fbfbfa;
+      padding: 30px;
+      border-radius: 6px;
+      border: 1px solid var(--border-color);
+    }
+    .location-card {
+      background-color: rgba(144, 18, 18, 0.05);
+      border-left: 4px solid var(--brand-burgundy);
+      padding: 15px 20px;
+      margin: 25px 0;
+      border-radius: 0 4px 4px 0;
+    }
+    .archive-link-box {
+      margin-top: 30px;
+      padding-top: 20px;
+      border-top: 1px dashed var(--border-color);
+      text-align: center;
+    }
+    .fb-btn {
+      display: inline-block;
+      background-color: #3b5998;
+      color: #ffffff !important;
+      padding: 10px 20px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 0.9rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      transition: background-color 0.2s ease;
+    }
+    .fb-btn:hover {
+      background-color: #2d4373;
+    }
+  </style>
+</head>
+<body>
+
+<div class="site-wrapper">
+
+  <!-- Header Section -->
+  <header>
+    <div class="brand-container">
+      <a href="../index.html" class="brand-link" title="Return to Homepage">
+        <img src="../images/hart-emblem.png" alt="Friends of Hart Park Emblem" class="header-logo">
+      </a>
+      <h1 class="site-title">Silents Under the Stars</h1>
+      <div class="header-spacer"></div>
+    </div>
+  </header>
+
+  <!-- Navigation Bar (Paths adjusted to navigate from the events folder) -->
+  <nav>
+    <ul>
+      <li><a href="../park/">The Park</a></li>
+      <li><a href="../mansion/">The Mansion</a></li>
+      <li><a href="../barnyard/">Barnyard</a></li>
+      <li><a href="../hart-hall/">Hart Hall</a></li>
+      <li><a href="../trading-post/">Trading Post</a></li>
+      <li><a href="../events/powwow.html">Powwow</a></li>
+      <li><a href="../events/silents.html" class="active">Silents</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content Area -->
+  <main class="main-container">
+    
+    <h2 class="section-title" style="text-align: center; margin-bottom: 10px;">Silents is Back, this time with a Halloween theme!</h2>
+    <p style="text-align: center; font-style: italic; color: #666; margin-bottom: 30px;">Check back here for the 2026 event this October.</p>
+
+    <div class="silents-layout">
+      
+      <!-- Left Column: The 2026 Halloween Flyer -->
+      <div class="flyer-column">
+        <!-- Relative path to find the flyer we stashed in the root events directory -->
+        <img src="Silents2026.png" alt="Silents Under the Stars: Halloween Flyer - October 24, 2026">
+      </div>
+
+      <!-- Right Column: Event Details & Archive -->
+      <div class="details-column">
+        <h3 style="color: var(--brand-burgundy); margin-top: 0; font-family: 'Georgia', serif; font-size: 1.5rem;">A Classic Night of Heritage & Cinema</h3>
+        <p style="line-height: 1.6; color: var(--text-dark);">
+          Join us under the night sky for a classic screening of silent horror films presented by the Friends of Hart Park and the City of Santa Clarita. This beloved annual fundraiser brings history alive with authentic entertainment, dining, and community spirit.
+        </p>
+
+        <!-- Location Highlight Card -->
+        <div class="location-card">
+          <h4 style="margin: 0 0 5px 0; color: var(--brand-burgundy); text-transform: uppercase; letter-spacing: 0.5px; font-size: 0.85rem;">Where?</h4>
+          <p style="margin: 0; font-weight: bold; font-family: 'Georgia', serif; font-size: 1.1rem; color: var(--text-dark);">
+            William S. Hart Park at Hart Hall
+          </p>
+          <p style="margin: 3px 0 0 0; font-size: 0.95rem; color: #555;">
+            24151 Newhall Ave, Santa Clarita, CA
+          </p>
+        </div>
+
+        <p style="line-height: 1.6; color: var(--text-dark); font-size: 0.95rem;">
+          Full program details, ticketing instructions, showtimes, and vendor updates will be posted right here as our autumn schedules lock into place.
+        </p>
+
+        <!-- Past Gallery Archive Feature Link -->
+        <div class="archive-link-box">
+          <p style="margin-top: 0; margin-bottom: 15px; font-size: 0.95rem; font-weight: bold; color: var(--text-dark);">
+            Want to see what makes this night magical?
+          </p>
+          <a target="_blank" href="https://www.facebook.com/media/set/?set=a.515239427822144&type=3" class="fb-btn">
+            📸 View 2024 Silents Photo Gallery
+          </a>
+          <p style="font-size: 0.8rem; color: #777; margin-top: 10px; font-style: italic;">
+            Link opens in a new tab on Facebook
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- Clean, Fixed Global Footer -->
+  <footer>
+    <div class="footer-nav">
+      <a href="../index.html">Home</a> | 
+      <a href="../The_Friends/fhp_organization.html">Organization</a> | 
+      <a href="../Newsletters/newsletters.html">Newsletters</a> | 
+      <a href="../links.html">Links</a> | 
+      <a href="../Contact/contact.html">Contact Us</a>
+    </div>
+    <div class="copyright">
+      <p>Powered by <a href="https://friendsofhartpark.org" target="_blank" style="color: #555; text-decoration: none; font-weight: bold;">friendsofhartpark.org</a>. All rights reserved.</p>
+    </div>
+  </footer>
+
+</div>
+
+</body>
+</html>
+

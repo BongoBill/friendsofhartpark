@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hart Meeting Hall - Friends of Hart Park</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="shortcut icon" href="../images/fohp.ico">
+  <style>
+    /* Custom Interior Styles for Hart Hall Showcase */
+    .hall-hero {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      border-radius: 4px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+    }
+    .hall-hero img {
+      display: block;
+      width: 100%;
+      height: auto; /* Lets the height scale naturally with your crop */
+      object-fit: cover;
+      object-position: center; /* Frames the building perfectly */
+    }
+    .hall-hero-overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(transparent, rgba(0,0,0,0.7));
+      padding: 20px;
+      color: #fff;
+    }
+    .hall-hero-overlay h2 {
+      margin: 0;
+      font-size: 2rem;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+    }
+    .history-quote {
+      font-style: italic;
+      border-left: 4px solid #7a2021; /* Match your main crimson theme */
+      padding-left: 20px;
+      margin: 25px 0;
+      color: #555;
+    }
+    /* Amenities Feature Grid */
+    .amenities-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin: 30px 0;
+    }
+    .amenity-card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 6px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      border-top: 3px solid #7a2021;
+      text-align: center;
+    }
+    .amenity-card h4 {
+      margin: 0 0 10px 0;
+      color: #7a2021;
+    }
+    .amenity-card p {
+      margin: 0;
+      font-size: 0.9rem;
+    }
+    /* Call to Action Banner */
+    .cta-banner {
+      background: #fdfcf7;
+      border: 1px solid #e6e4d5;
+      padding: 30px;
+      border-radius: 6px;
+      text-align: center;
+      margin: 40px 0;
+    }
+    .cta-button {
+      display: inline-block;
+      background: #7a2021;
+      color: #fff;
+      text-decoration: none;
+      padding: 12px 25px;
+      border-radius: 4px;
+      font-weight: bold;
+      margin-top: 15px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      transition: background 0.2s;
+    }
+    .cta-button:hover {
+      background: #5c1819;
+    }
+  </style>
+</head>
+<body>
+
+<div class="site-wrapper">
+
+  <!-- Header Section -->
+  <header>
+    <div class="brand-container">
+      <a href="../index.html" class="brand-link" title="Return to Homepage">
+        <img src="../images/hart-emblem.png" alt="Friends of Hart Park Emblem" class="header-logo">
+      </a>
+      <h1 class="site-title">The Friends of Hart Park and Museum</h1>
+      <div class="header-spacer"></div>
+    </div>
+  </header>
+
+  <!-- Navigation Paths Corrected for Subdirectory Depth -->
+  <nav>
+    <ul>
+      <li><a href="../park/">The Park</a></li>
+      <li><a href="../mansion/">The Mansion</a></li>
+      <li><a href="../barnyard/">Barnyard</a></li>
+      <li><a href="../hart-hall/" class="active">Hart Hall</a></li>
+      <li><a href="../trading-post/">Trading Post</a></li>
+      <li><a href="../events/powwow.html">Powwow</a></li>
+      <li><a href="../events/silents.html">Silents</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content Showcase -->
+  <main class="main-container">
+    
+    <!-- Scenic Panoramic Banner Upgrade -->
+    <div class="hall-hero">
+      <img src="../images/hall.jpg" alt="Hart Meeting Hall Facility">
+      <div class="hall-hero-overlay">
+        <h2>Hart Meeting Hall</h2>
+      </div>
+    </div>
+
+    <section class="content-layout">
+      <p>Located conveniently near the park entrance on Newhall Avenue, Hart Hall offers a spacious, versatile indoor venue perfect for large gatherings, community events, and private celebrations.</p>
+      
+      <!-- History blockquote styling for character -->
+      <blockquote class="history-quote">
+        <strong>A Historic Resource:</strong> The building was originally constructed as a rustic "pole barn." Today, it is affectionately known by that name, as the massive raw timber poles were seamlessly preserved and incorporated as a striking architectural highlight of the interior design.
+      </blockquote>
+
+      <h3>Perfect for Any Gathering</h3>
+      <p>Whether you are organizing a formal presentation or a grand reception, the hall scales beautifully to accommodate your guest list:</p>
+      
+      <ul>
+        <li><strong>Assembly Layout:</strong> Comfortably holds up to 200 people for theater-style seating or standing meetings.</li>
+        <li><strong>Banquet Layout:</strong> Comfortably seats up to 120 guests for traditional sit-down dinners.</li>
+      </ul>
+
+      <!-- Interactive Amenity Grid Box Blocks -->
+      <h3 style="margin-top: 40px;">Included Amenities</h3>
+      <div class="amenities-grid">
+        <div class="amenity-card">
+          <h4>Seating Assured</h4>
+          <p>Full inventory of tables and chairs are provided with your rental package.</p>
+        </div>
+        <div class="amenity-card">
+          <h4>Caterer's Kitchen</h4>
+          <p>A dedicated staging kitchen space on-site for streamlined meal preparation and service.</p>
+        </div>
+        <div class="amenity-card">
+          <h4>Outdoor Patio</h4>
+          <p>An attached exterior patio space, ideal for cocktail hours or open-air mingling.</p>
+        </div>
+      </div>
+
+      <!-- Action-Oriented Booking Form Container Banner -->
+      <div class="cta-banner">
+        <h3>Plan Your Next Event at Hart Hall</h3>
+        <p>The hall can be reserved for parties, business meetings, weddings, and community functions. Contact the scheduling office directly for active rates, availability, and tour appointments.</p>
+        <a href="tel:6612591750" class="cta-button">Call to Reserve: 661-259-1750</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Global Footer -->
+  <footer>
+    <div class="footer-nav">
+      <a href="../index.html">Home</a> | 
+      <a href="../organization/friends.html">Organization</a> | 
+      <a href="../newsletters/newsletters.html">Newsletters</a> | 
+      <a href="../links.html">Links</a> | 
+      <a href="../contact/contact.html">Contact Us</a>
+    </div>
+    <div class="copyright">
+      <p>Powered by <a href="https://friendsofhartpark.org">friendsofhartpark.org</a>. All rights reserved.</p>
+    </div>
+  </footer>
+
+</div>
+
+</body>
+</html>
