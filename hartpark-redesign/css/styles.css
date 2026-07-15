@@ -410,3 +410,107 @@ footer {
   margin-top: 15px; 
 }
 
+/* ==========================================================================
+   Ranch House Page Styles (100% Kosher - No Inline HTML Styles!)
+   ========================================================================== */
+
+/* Ranch House Page Grid Layout */
+.ranch-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+@media (min-width: 850px) {
+  .ranch-grid {
+    grid-template-columns: 1fr 320px; /* Narrative on the left, Sidebar on the right */
+  }
+}
+
+.ranch-main h2 {
+  color: var(--brand-burgundy);
+  border-bottom: 2px solid var(--brand-burgundy);
+  padding-bottom: 8px;
+  margin-top: 0;
+}
+
+/* Responsive Featured Image with Clean Spacing */
+.ranch-featured-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  border-radius: 6px;
+  margin-bottom: 25px; /* Clean breathing room before paragraphs */
+}
+
+/* History Callout Box with Gold Accent Left Border */
+.history-callout {
+  background-color: #f7f5eb;
+  border-left: 4px solid var(--accent-gold);
+  padding: 18px 20px;
+  margin: 25px 0;
+  border-radius: 0 6px 6px 0;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.02);
+}
+
+.history-callout h3 {
+  color: var(--brand-burgundy);
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 1.2rem;
+}
+
+.history-callout p {
+  margin: 0;
+  font-style: italic;
+  line-height: 1.55;
+  color: #555;
+}
+
+/* Sidebar Info Panel Styling */
+.ranch-sidebar .info-panel {
+  background: #fdfcf7;
+  border: 1px solid #e6e4d5;
+  padding: 25px;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.ranch-sidebar h3 {
+  color: var(--brand-burgundy);
+  margin-top: 0;
+  border-bottom: 2px solid var(--brand-burgundy);
+  padding-bottom: 10px;
+}
+
+.ranch-sidebar .hours-block {
+  background: #fff;
+  border-left: 4px solid var(--brand-burgundy);
+  padding: 12px 15px;
+  margin: 15px 0;
+  border-radius: 0 4px 4px 0;
+}
+
+.hours-day {
+  font-weight: bold;
+  color: var(--brand-burgundy);
+  margin: 0 0 4px 0;
+}
+
+.hours-time {
+  margin: 0;
+}
+
+.ranch-meta {
+  font-size: 0.9rem;
+  border-top: 1px dashed var(--border-color);
+  margin-top: 20px;
+  padding-top: 15px;
+  color: #555;
+}
+
+.ranch-meta p {
+  margin: 6px 0;
+}
