@@ -78,24 +78,27 @@ header {
 }
 
 /* Modern Responsive Navigation Bar - Enforced Single-Line Layout */
+
 nav {
-  background-image: url("../images/navBar_L.gif");
-  background-repeat: repeat-x; /* Completely stops the vertical "triple seam" tiling */
-  background-position: center;
   border-bottom: 2px solid var(--border-color);
 }
 
+/* Ensure individual links don't stretch off-screen */
+nav a, .nav-links a {
+  white-space: nowrap;         /* Keeps words like "RANCH HOUSE" together on one line */
+}
 nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap; /* Allows menu items to cleanly wrap on small screens */
   justify-content: space-around; /* Dynamically spreads buttons evenly across the single line */
   align-items: center;
 }
 
 nav ul li {
-  flex: 1;
+  flex: 0 1 auto;
   text-align: center;
 }
 
@@ -248,7 +251,6 @@ nav ul li a.active {
 
 /* Global Footer Styles */
 footer {
-  background-image: url("../images/footBar_L.gif");
   color: var(--brand-burgundy);
   text-align: center;
   padding: 20px;
