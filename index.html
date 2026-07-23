@@ -1,642 +1,180 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "https://www.w3.org/TR/REC-html40/loose.dtd">
-<html>
-  <head>
-    <meta http-equiv="Content-Type" content="text/html;
-      charset=ISO-8859-1">
-    <meta name="GENERATOR" content="Microsoft FrontPage 6.0">
-    <meta http-equiv="Content-Style-Type" content="text/css">
-    <link href="theme/WSH.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="css/lightbox.css"/>
-	<link rel="shortcut icon" href="images/fohp.ico">
-    <title>Friends of Hart Park and Museum</title>
-    <script language="JavaScript" type="text/JavaScript">
-<!--
-function MM_preloadImages() { //v3.0
-  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
-    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
-    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Friends of Hart Park and Museum</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="shortcut icon" href="images/fohp.ico">
+</head>
+<body>
+
+<div class="site-wrapper">
+
+  <!-- Header Section with Cropped Emblem Home Link -->
+  <header>
+    <div class="brand-container">
+      <a href="index.html" class="brand-link" title="Return to Homepage">
+        <img src="images/hart-emblem.png" alt="Friends of Hart Park Emblem" class="header-logo">
+      </a>
+      <h1 class="site-title">The Friends of Hart Park and Museum</h1>
+      <div class="header-spacer"></div>
+    </div>
+  </header>
+
+  <!-- Cleaned Modern Navigation -->
+  <nav>
+    <ul>
+      <li><a href="park/">The Park</a></li>
+      <li><a href="mansion/">The Mansion</a></li>
+      <li><a href="ranch-house/">Ranch House</a></li>
+      <li><a href="barnyard/">Barnyard</a></li>
+      <li><a href="hart-hall/">Hart Hall</a></li>
+      <li><a href="trading-post/">Trading Post</a></li>
+      <li><a href="events/powwow.html">Powwow</a></li>
+      <li><a href="events/silents.html">Silents</a></li>
+    </ul>
+  </nav>
+
+  <!-- Full-Width Panoramic Hero Section -->
+  <div class="hero-section">
+    <img src="images/20260410reopeningDay-lg.jpg" alt="Beautiful panoramic view of William S. Hart Mansion" class="hero-image">
+  </div>
+
+  <!-- Main Grid Content Area -->
+  <main class="main-container">
+
+    <!-- Upcoming Events Grid -->
+    <section class="events-section">
+      <h2 class="section-title">Upcoming Events & Tours</h2>
+      <div class="events-grid">
+
+        <!-- Event 1: Next Gen Naturalists (Points to Image -> Smart Script Triggers Lightbox) -->
+        <a href="events/NextGen2026.jpg" class="card-link" title="Click to view printable flyer">
+          <div class="event-card">
+            <img src="events/NextGen2026.jpg" alt="Next Gen Naturalists Flyer">
+            <h3>Next Gen Naturalists</h3>
+            <p class="event-date">Tuesdays, July 14 – August 4, 2026</p>
+            <p>Immersive nature program exploring local wildlife, geology, and outdoor skills for teens ages 13 to 17. <em>(Click to view printable flyer)</em></p>
+          </div>
+        </a>
+
+        <!-- Event 2: Silents Under the Stars (Points to HTML -> Smart Script Allows Normal Navigation) -->
+        <a href="events/silents.html" class="card-link" title="View event details">
+          <div class="event-card">
+            <img src="events/Silents2026.png" alt="Silents Under the Stars Flyer">
+            <h3>Silents Under the Stars: Halloween</h3>
+            <p class="event-date">Saturday, October 24, 2026</p>
+            <p>Join us under the night sky for a classic screening of silent horror films presented by the Friends of Hart Park.</p>
+          </div>
+        </a>
+
+        <!-- Regular Tours: Barnyard (Points to HTML -> Smart Script Allows Normal Navigation) -->
+        <a href="barnyard/" class="card-link" title="View Barnyard info">
+          <div class="event-card">
+            <img src="events/barnyardTours.jpg" alt="Regular Barnyard Tours" style="height: 340px; object-fit: cover; object-position: top;">
+            <h3>Regular Barnyard Tours</h3>
+            <p class="event-date">Saturdays @ 10:30 AM & 12:30 PM</p>
+            <p>Come visit the barnyard animal residents! Check schedules locally for weather updates.</p>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- Lower Info & Social Grid -->
+    <section class="boilerplate-grid">
+      <div class="info-meta-column">
+        <div class="info-block">
+          <h3>Hart of the Matter</h3>
+          <p>Stay updated with our seasonal community updates and historic preservation columns.</p>
+          <p><strong><a href="https://mailchi.mp/e6fa53ad075d/hart-of-the-matter-spring-2026" target="_blank">Click here for the Spring 2026 Newsletter!</a></strong></p>
+          <p><a href="newsletters.html">View Archive of Past Newsletters</a></p>
+        </div>
+
+        <div id="donate" class="info-block donation-block donation-section">
+          <h3>Support the Museum</h3>
+          <p>Funds raised by the Friends help maintain the mansion, care for park animals, and restore art treasures.</p>
+          <form action="https://www.paypal.com/donate/" method="post" target="_blank">
+            <input type="hidden" name="hosted_button_id" value="K9GUB7E8JBSJY">
+            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" name="submit" alt="Donate via PayPal">
+          </form>
+        </div>
+
+        <div class="info-block">
+          <h3>About the Friends</h3>
+          <p>We are community members volunteering time and resources to support museum facilities. Looking to volunteer hands-on? Visit the city's portal at <a href="https://santaclaritavolunteers.com/" target="_blank">Santa Clarita Volunteers</a>.</p>
+        </div>
+      </div>
+
+      <div class="facebook-feed-column">
+        <h3>Latest from Facebook</h3>
+        <div class="fb-container">
+          <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffriendsofhartpark&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId"
+            width="100%"
+            height="500"
+            style="border:none; overflow:hidden; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);"
+            scrolling="no"
+            frameborder="0"
+            allowfullscreen="true"
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Global Footer -->
+  <footer>
+    <div class="footer-nav">
+      <a href="index.html">Home</a> |
+      <a href="about.html">About Us</a> |
+      <a href="newsletters.html">Newsletters</a> |
+      <a href="links.html">Contacts &amp; Links</a>
+    </div>
+    <div class="copyright">
+      <p>Powered by <a href="https://friendsofhartpark.org">friendsofhartpark.org</a>. All rights reserved.</p>
+    </div>
+  </footer>
+
+</div>
+
+<!-- The Lightbox Structure -->
+<div id="customLightbox" class="lightbox-modal" onclick="closeLightbox()">
+  <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+  <img class="lightbox-content" id="lightboxTargetImg" alt="Enlarged Printable Flyer">
+</div>
+
+<!-- Smart JavaScript Engine to drive the Lightbox vs Navigation automatically -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const cardLinks = document.querySelectorAll('.card-link');
+
+  cardLinks.forEach(link => {
+    link.addEventListener('click', function(event) {
+      const targetUrl = this.getAttribute('href');
+
+      // If the link target ends in an image extension, intercept it for the lightbox!
+      if (targetUrl.match(/\.(jpeg|jpg|gif|png)$/i)) {
+        event.preventDefault();
+        openLightbox(targetUrl);
+      }
+      // Otherwise, the browser naturally follows the link to the .html page
+    });
+  });
+});
+
+function openLightbox(imgSrc) {
+  document.getElementById('lightboxTargetImg').src = imgSrc;
+  document.getElementById('customLightbox').style.display = "block";
 }
 
-function MM_swapImgRestore() { //v3.0
-  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+function closeLightbox() {
+  document.getElementById('customLightbox').style.display = "none";
 }
-
-function MM_findObj(n, d) { //v4.01
-  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
-    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
-  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
-  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
-  if(!x && d.getElementById) x=d.getElementById(n); return x;
-}
-
-function MM_swapImage() { //v3.0
-  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
-   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
-}
-//-->
 </script>
-    <script type="text/javascript" src="js/prototype.js"></script>
-    <script type="text/javascript" src="js/scriptaculous.js?load=effects,builder"></script>
-    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
-    <script type="text/javascript" src="js/lightbox.js"></script>
-    <script type="text/javascript">
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-20562630-1']);
-  _gaq.push(['_setDomainName', 'none']);
-  _gaq.push(['_setAllowLinker', true]);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'https://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
-  </head>
-  <body
-onload="MM_preloadImages('images/nav/bDay_B.gif','images/nav/bDay_R.gif','images/nav/fiesta_B.gif','images/nav/fiesta_R.gif','images/nav/hall_B.gif','images/nav/hall_R.gif','images/nav/man_B.gif','images/nav/man_R.gif','images/nav/mbr_B.gif','images/nav/mbr_R.gif','images/nav/out_B.gif','images/nav/out_R.gif','images/nav/post_B.gif','images/nav/post_R.gif','images/nav/pow_B.gif','images/nav/pow_R.gif','images/nav/silents_B.gif','images/nav/silents_R.gif','images/topBar_L.gif','images/navBar_L.gif','images/midBar_L.gif','images/middle_L.gif','images/botBar_L.gif','images/footBar_L.gif','images/nav/film_B.gif','images/nav/film_R.gif')"
-    style=" background-color: rgb(32, 32, 25); background-image:
-    url(&quot;images/202019_back.gif&quot;);">
-    <table align="center" bgcolor="#F6F5EE" border="0" cellpadding="0"
-      cellspacing="0" width="996">
-      <tbody>
-        <tr>
-          <td background="images/topBar_L.gif">
-            <table border="0" cellpadding="0" cellspacing="0">
-              <tbody>
-                <tr>
-                  <td width="50"> &nbsp;</td>
-                  <td width="896">
-                    <div class="TTL" align="center">The Friends of Hart Park and Museum</div>
-                  </td>
-                  <td valign="bottom" width="50"> <img
-                      src="images/spacer.gif" border="0" height="40"
-                      width="2"> </td>
-                </tr>
-              </tbody>
-            </table>
-          </td>
-        </tr>
-        <tr>
-          <td background="images/navBar_L.gif">
-            <table border="0" cellpadding="0" cellspacing="0"
-              width="100%">
-              <tbody>
-                <tr>
-                  <td><a href="Event_Pages/powwow.html"
-                      onmouseout="MM_swapImgRestore()"
-                      onmouseover="MM_swapImage('Image1','','images/nav/pow_R.gif',1)"><img
-                        src="images/nav/pow_B.gif" name="Image1"
-                        border="0" height="33" width="91"></a></td>
-                  <td>&nbsp;</td>
-                  <td><a href="Event_Pages/silents.html"
-                      onmouseout="MM_swapImgRestore()"
-                      onmouseover="MM_swapImage('Image3','','images/nav/silents_R.gif',1)"><img
-                        src="images/nav/silents_B.gif" name="Image3"
-                        border="0" height="33" width="76"></a></td>
-                  <td>&nbsp;</td>
-                  <td><a href="Kids_Only/index.htm"
-                      onmouseout="MM_swapImgRestore()"
-                      onmouseover="MM_swapImage('Image5','','images/nav/kids_R.gif',1)"><img
-                        src="images/nav/kids_B.gif" name="Image5"
-                        border="0" height="33" width="97"></a></td>
-                  <td><a href="Trading_Post/store.html"
-                      onmouseout="MM_swapImgRestore()"
-                      onmouseover="MM_swapImage('Image6','','images/nav/post_R.gif',1)"><img
-                        src="images/nav/post_B.gif" name="Image6"
-                        border="0" height="33" width="121"></a></td>
-                  <td><a href="Hart_Hall/hart_hall.html"
-                      onmouseout="MM_swapImgRestore()"
-                      onmouseover="MM_swapImage('Image7','','images/nav/hall_R.gif',1)"><img
-                        src="images/nav/hall_B.gif" name="Image7"
-                        border="0" height="33" width="119"></a></td>
-                  <td><a href="Mansion/mansion.html"
-                      onmouseout="MM_swapImgRestore()"
-                      onmouseover="MM_swapImage('Image8','','images/nav/man_R.gif',1)"><img
-                        src="images/nav/man_B.gif" name="Image8"
-                        border="0" height="33" width="113"></a></td>
-                  <td><a href="The_Friends/membership.html"
-                      onmouseout="MM_swapImgRestore()"
-                      onmouseover="MM_swapImage('Image9','','images/nav/mbr_R.gif',1)"><img
-                        src="images/nav/mbr_B.gif" name="Image9"
-                        border="0" height="33" width="108"></a></td>
-                  <td><a href="Filmography/filmography.html"
-                      onmouseout="MM_swapImgRestore()"
-                      onmouseover="MM_swapImage('Image15','','images/nav/film_R.gif',1)"><img
-                        src="images/nav/film_B.gif" name="Image15"
-                        border="0" height="33" width="127"></a><a
-                      href="Zoo/animals.html"
-                      onmouseout="MM_swapImgRestore()"
-                      onmouseover="MM_swapImage('Image10','','images/nav/zoo_R.gif',1)"><img
-                        src="images/nav/zoo_B.gif" name="Image10"
-                        border="0" height="33" width="111"></a></td>
-                </tr>
-              </tbody>
-            </table>
-          </td>
-        </tr>
-        <tr>
-          <td background="images/navBar_L.gif">
-            <table border="0" cellpadding="0" cellspacing="0"
-              width="100%">
-              <tbody>
-                <tr>
-                  <td>&nbsp;</td>
-                </tr>
-              </tbody>
-            </table>
-          </td>
-        </tr>
-        <tr>
-          <td background="images/midBar_L.gif"> <img
-              src="images/spacer.gif" border="0" height="20" width="2">
-          </td>
-        </tr>
-        <tr>
-          <td background="images/middle_L.gif">
-            <table border="0" cellpadding="0" cellspacing="0">
-              <tbody>
-                <tr>
-                  <td width="60"> <img src="images/spacer.gif"
-                      border="0" height="385" width="2"> </td>
-                  <td valign="top" width="883">
-                    <table style="border-collapse: collapse" border="1"
-                      bordercolor="#6C0101" cellpadding="0">
-                      <tbody>
-                        <tr>
-                          <td id="NOBRDR" valign="top" width="324">
-                            <div class="HEAD" align="center"> <b
-                                class="EVNTS">News &amp; Announcements</b></div>
-                          </td>
-                          <td id="NOBRDR" valign="top" width="561">
-                            <div class="HEAD" style="width: 561px;
-                              height: 14px" align="center"> <b
-                                class="EVNTS">Upcoming Events</b></div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td id="NEWS" align="center" valign="top"
-                            width="324">
-                            <table style=" height: 437px;" border="0">
-                              <tbody>
-                                  <td style=" height: 300px;" id="NEWS2">
-                                        <p align="center"> <iframe
-src="https://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FThe-Friends-of-Hart-Park%2F171859949545623&amp;width=292&amp;colorscheme=light&amp;show_faces=true&amp;border_color&amp;stream=true&amp;header=true&amp;height=427"
-                                            style="border:medium none;
-                                            overflow:hidden;
-                                            width:300px; height:448px;"
-                                            allowtransparency="true"
-                                            frameborder="0"
-                                            scrolling="no"></iframe> </p>
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td style="vertical-align: top;">
-                                        <font color="#FFCC00" size="6">
-                                          <img
-                                            src="images/baseline_v2.gif"
-                                            border="0" height="24"
-                                            width="313"></font></b></i></td>
-                                </tr>
-                                <tr>
-                                  <td style="vertical-align: top;">
-                                    <h1 align="center">William S. Hart&rsquo;s mansion reopens to the public!</h1>
-                                    <a href= "images/20260410reopeningDay-lg.jpg" title="Mansion Reopens!" rel="lightbox[mansionReopens]">
-                                      <img width="312" align="center" src="images/20260410reopeningDay-sm.jpg"/>
-                                    </a>
-                                    <h2 align="center">Visit the Park &amp; Museum&rsquo;s <a href="https://www.facebook.com/hartmuseum" target="_blank">Facebook page</a>, the
-                                    <a href="https://hartpark.santaclarita.gov/" target="_blank">Park&rsquo;s website</a>, the
-                                    <a href="https://hartpark.santaclarita.gov/hart-museum" target="_blank">Museum&rsquo;s website</a>, 
-                                    and <a href="https://www.instagram.com/hartmuseum/" target="_blank">Instagram page</a>!</h2>
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td style="vertical-align: top;">
-                                        <font color="#FFCC00" size="6">
-                                          <img
-                                            src="images/baseline_v2.gif"
-                                            border="0" height="24"
-                                            width="313"></font></b></i></td>
-                                </tr>
-                                <tr>
-                                  <td style="vertical-align: top;">
-                                    <a href="Trading_Post/store.html">
-                                      <img width="312" align="center" src="Trading_Post/TradingPostHours_sm.png"/>
-                                    </a>
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td style="vertical-align: top;">
-                                        <font color="#FFCC00" size="6">
-                                          <img
-                                            src="images/baseline_v2.gif"
-                                            border="0" height="24"
-                                            width="313"></font></b></i></td>
-                                </tr>
-                                <tr>
-                                  <td style="vertical-align: top;">
-                                  <a target="_blank" href="http://bit.ly/hartofthematter">
-                                  <img width="312" src="images/eHOTM.png" />
-                                  </a>
-                                  <h2>
-                                  Click 
-                                  <a href="https://mailchi.mp/e6fa53ad075d/hart-of-the-matter-spring-2026" target="_blank">
-                                  here for the Spring 2026 Hart of the Matter newsletter!</a><br>
-                                  Click <a href="Newsletters/newsletters.html"> here for other recent newsletters</a>.
-                                  </h2>
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td style="vertical-align: top;">
-                                        <font color="#FFCC00" size="6">
-                                          <img
-                                            src="images/baseline_v2.gif"
-                                            border="0" height="24"
-                                            width="313"></font></b></i></td>
-                                </tr>
-                                <!--
-                                <tr><td>
-                                    <p align="center">
-                                    <img src="Zoo/images/deer_LayingDown.jpg" />
-                                    <h3 align="center">
-                                    <br>Barnyard partially re-opened!
-                                    </h3> </p>
-                                    <p align="center">
-                                    Click <a href="Zoo/animals.html">here</a>
-                                    for details.
-                                    </p>
-                                </td></tr>
-                                <tr>
-                                  <td style="vertical-align: top;">
-                                        <font color="#FFCC00" size="6">
-                                          <img
-                                            src="images/baseline_v2.gif"
-                                            border="0" height="24"
-                                            width="313"></font></b></i></td>
-                                </tr>
-                                -->
-                              </tbody>
-                            </table>
-                                <p style="text-indent: 20px"
-                                  align="center"> <font color="#008000"
-                                    size="4">Donations may be made by
-                                    clicking here:</font></p>
-                                    <a href="https://www.paypal.com/donate/?hosted_button_id=K9GUB7E8JBSJY"
-                                       target="_blank">
-<!-- Display the payment button. -->
-<input type="image" name="submit" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" alt="Donate">
-<img alt="" width="1" height="1" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
-</a>
-                                <p style="text-indent: 20px"
-                                  align="center"> <font color="#008000"
-                                    size="2">We thank you for your
-                                    continued support.</font></p>
-                              </b></i></td>
-                          <td align="center" valign="top" width="557">
-
-<!-------------------------------------------------------------------------------->
-<a href= "Event_Pages/spring-summer-2026/Camping-lg.png" 
-title="Spring/Summer 2026" rel="lightbox[SpringSummerEvents2026]">
-  <img src="Event_Pages/spring-summer-2026/Camping-sm.png" />
-</a>
-<p align="center"><img src="images/baseline_v2.gif" border="0" height="24" width="546"/></p>
-<!-------------------------------------------------------------------------------->
-
-                                <h2>2025 Calendar of Events</h2>
-                                <h3>Click on links as details become available</h3>
-                                <table style="text-align: left; width:
-                                  100%;" border="0" cellpadding="4"
-                                  cellspacing="5">
-<tbody>
-<!-------------------------------------------------------------------------------->
-<tr> <td id="EventDate">
-Saturdays 10:30am &amp; 12:30pm
-</td> <td id="Event"> 
-<a href= "Event_Pages/2026barnyardTours.png" 
-title="Barnyard Tours" rel="lightbox[barnyardTour]">
-Barnyard Tours
-</a>
-</td></tr>
-<!-------------------------------------------------------------------------------->
-<tr>
-<td id="EventDate">
-Saturday &amp; Sunday, June 6<sup>th</sup> &amp; 7<sup>th</sup>
-</td> <td id="Event">
-<a href= "Event_Pages/spring-summer-2026/Camping-lg.png" 
-title="Spring/Summer 2026" rel="lightbox[SpringSummerEvents2026]">
-Let's go Camping!
-</a>
-</td></tr>
-<!-------------------------------------------------------------------------------->
-                                    <!--
-                                    <tr>
-                                      <td id="EventDate">Saturday, Dec. 1<sup>st</sup>
-                                      6:30pm&ndash;8:30pm</td>
-                                      <td id="Event">
-                                      <a href= "Event_Pages/CowboysCarols2018-lg.png" 
-                                      title="Cowboys &amp; Carols" rel="lightbox[cowboyscarols]">
-                                      Cowboys &amp; Carols</a> gather in Hart Hall
-                                      </td>
-                                    </tr>
-                                    -->
-</table>
-<!------------------------------------------------------------------------------------>
-<!--
-<p align="center"><img src="images/baseline_v2.gif" border="0" height="24" width="546"/></p>
-<img align="center" src="Trading_Post/TradingPostHours_sm.png"/>
--->
-<!--
-                                    <p style="margin-top: 7px;
-                                      margin-bottom: 5px" align="center">
-<img src="images/baseline_v2.gif" border="0" height="24" width="546"/></p>
-                                    <p align="center">
-                                        <video id="goose" controls autoplay muted poster="Zoo/Geese.png">
-                                            <source src="Zoo/Geese.m4v" type="video/mp4">
-                                            March on over to William S. Hart Park!
-                                        </video>
-                                    </p>
-                                    <p style="margin-top: 7px;
-                                      margin-bottom: 5px" align="center">
-<img src="images/baseline_v2.gif" border="0" height="24" width="546"/></p>
--->
-                                    <!--
-                                  </tbody>
-                                </table>
-                                    <h3 align="center">Join in the fun by<br><a href="The_Friends/membership.html">
-                                    joining The Friends of Hart Park</a>!</h3>
-                                    <p style="margin-top: 7px;
-                                      margin-bottom: 5px" align="center">
-<img src="images/baseline_v2.gif" border="0" height="24" width="546"/></p>
-                                    -->
-                      </tbody>
-                    </table>
-                    <hr>
-                    <table border="0">
-                      <tbody>
-                        <tr>
-                          <td width="25">&nbsp;</td>
-                          <td width="896">
-						   <h4>
-                            <p align="left"><a
-                                href="The_Friends/fhp_organization.html"><b>
-                                  The Friends of Hart Park and Museum</b></a>
-                              are people in your community who volunteer
-                              their time and talents to support the
-                              museum facilities.&nbsp; For many years,
-                              funds raised by the Friends have been used
-                              to help maintain the mansion, help with the
-                                  animals in the park, and clean/restore
-                                  numerous art treasures.</b></a></p>
-                            <p>This site is provided for your enjoyment,
-                              and all the proceeds from this site go to
-                              this ongoing support effort. Thank you for
-                              visiting us here!</p>
-						  </h4>
-                          </td>
-                          <td width="25">&nbsp;</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </td>
-                  <td width="57"> &nbsp; </td>
-                </tr>
-              </tbody>
-            </table>
-          </td>
-        </tr>
-        <tr>
-          <td background="images/botBar_L.gif">
-            <table border="0" cellpadding="0" cellspacing="0">
-              <tbody>
-                <tr>
-                  <td valign="bottom" width="135">
-                    <div align="left"> <a
-                        href="javascript:location='index.html';"
-                        style="text-decoration: underline"
-                        onmouseout="MM_swapImgRestore()"
-                        onmouseover="MM_swapImage('Image11','','images/nav/branding_R2.gif',1)">
-                        <img src="images/nav/branding_B2.gif"
-                          name="Image11" border="0" height="33"
-                          width="39"> </a></div>
-                  </td>
-                  <td align="center" valign="bottom" width="726"> <img
-                      src="images/spacer.gif" border="0" height="45"
-                      width="2"> <a
-                      href="javascript:location='index.html';
-window.open('resolution.html','RES','height=394,width=420,menubar=no,scrollbars=no,resizable=no')"
-                      style="text-decoration: underline"
-                      onmouseout="MM_swapImgRestore()"
-                      onmouseover="MM_swapImage('Image14','','images/res2.gif',1)">
-                      <img src="images/res1.gif" name="Image14"
-                        border="0" height="25" width="279"> </a> </td>
-                  <td valign="bottom" width="135">
-                    <div align="right"> <a href="sitemap.html"
-                        onmouseout="MM_swapImgRestore()"
-                        onmouseover="MM_swapImage('Image12','','images/nav/siteMap_R.gif',1)">
-                        <img src="images/nav/siteMap_B.gif"
-                          name="Image12" border="0" height="22"
-                          width="66"></a> <a href="Legal/notice.html"
-                        onmouseout="MM_swapImgRestore()"
-                        onmouseover="MM_swapImage('Image13','','images/nav/legal_R.gif',1)">
-                        <img src="images/nav/legal_B.gif" name="Image13"
-                          border="0" height="22" width="50"> </a></div>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </td>
-        </tr>
-        <tr>
-          <td background="images/footBar_L.gif">
-            <table border="0" cellpadding="0" cellspacing="0">
-              <tbody>
-                <tr>
-                  <td valign="bottom" width="10"> <img
-                      src="images/spacer.gif" border="0" height="25"
-                      width="2"> </td>
-                  <td valign="middle" width="976">
-                    <table border="0" cellpadding="0" cellspacing="0"
-                      width="100%">
-                      <tbody>
-                        <tr>
-                          <td id="BOTBAR">
-                            <p align="center"> <a href="index.htm">Home</a>&nbsp;|&nbsp;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                              <a href="The_Friends/volunteer.html">Volunteers</a>&nbsp;|&nbsp;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                              <a
-                                href="The_Friends/fhp_organization.html">Organization</a>&nbsp;|&nbsp;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                              <a href="Newsletters/newsletters.html">Newsletter</a>&nbsp;|&nbsp;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                              <a href="links.html">Links</a>&nbsp;|&nbsp;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                              <a href="Contact/contact.html">Contact Us</a>
-                            </p>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </td>
-                  <td valign="bottom" width="10"> &nbsp; </td>
-                </tr>
-              </tbody>
-            </table>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </body>
+</body>
 </html>
+
