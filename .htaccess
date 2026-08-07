@@ -1,7 +1,0 @@
-RewriteEngine On
-
-RewriteCond %{HTTP_HOST} ^friendsofhartpark\.org [NC]
-RewriteRule ^silents$ /Event_pages/silents.html [L,R=301]
-
-RewriteCond %{HTTP_HOST} ^friendsofhartpark\.com [NC]
-RewriteRule ^silents$ /Event_pages/silents.html [L,R=301]
