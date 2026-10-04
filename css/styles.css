@@ -147,7 +147,9 @@ nav ul li a.active {
   padding: 30px;
 }
 
-/* Events Grid - Dynamic Cards */
+/* ==========================================================================
+   Events Grid - Responsive & Equal-Height Cards
+   ========================================================================== */
 .events-section {
   margin-bottom: 40px;
 }
@@ -159,6 +161,7 @@ nav ul li a.active {
   margin-top: 0;
 }
 
+/* Responsive Grid Layout */
 .events-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -166,6 +169,22 @@ nav ul li a.active {
   margin-top: 20px;
 }
 
+/* Force 1 column on mobile screens */
+@media (max-width: 600px) {
+  .events-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Card Links: Fills full height of the grid cell */
+.card-link {
+  display: flex;
+  text-decoration: none;
+  color: inherit;
+  height: 100%;
+}
+
+/* Event Cards: Equal heights across the row */
 .event-card {
   background: #ffffff;
   border: 1px solid var(--border-color);
@@ -173,16 +192,23 @@ nav ul li a.active {
   padding: 15px;
   text-align: center;
   box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
 }
 
+/* Standardized Image Header Sizing - Display Full Image Height */
 .event-card img {
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  height: auto;             /* Lets the full height of each graphic show */
+  max-height: 320px;        /* Prevents tall portrait graphics from blowing out the card */
+  object-fit: contain;      /* Fits the entire image in view without cropping edges */
   border-radius: 2px;
 }
 
 .event-card h3 {
-  margin: 10px 0 5px 0;
+  margin: 15px 0 5px 0;
   color: var(--brand-burgundy);
 }
 
@@ -191,6 +217,10 @@ nav ul li a.active {
   font-weight: bold;
   color: #666;
   margin-bottom: 10px;
+}
+
+.event-card p {
+  margin-top: 0;
 }
 
 /* Boilerplate & Footer Modules (3-Column Layout) */
@@ -1284,3 +1314,30 @@ footer {
   line-height: 1.4;
 }
 
+/* 1. LAYOUT GRID: Handles desktop columns vs. mobile single-column */
+.card-container {
+  display: grid;
+  /* Auto-fits 2 to 3 cards per row on wider screens (min-width 300px each) */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px; /* Space between the cards */
+}
+
+/* Forces 1 column on smaller phone screens */
+@media (max-width: 600px) {
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* 2. CARD HEIGHT & IMAGES: Keeps heights uniform without distorting images */
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Stretches card height to match the tallest card in the row */
+}
+
+.card img {
+  width: 100%;
+  height: 220px; /* Standardized header height for all card images */
+  object-fit: cover; /* Intelligently crops edges so images fit without stretching */
+}
