@@ -11,23 +11,53 @@
     /* Special Layout Overrides for the Silents Event Page */
     .silents-layout {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      grid-template-columns: 1.2fr 1fr;
       gap: 40px;
       align-items: start;
       margin-top: 30px;
     }
+
+    @media (max-width: 768px) {
+      .silents-layout {
+        grid-template-columns: 1fr;
+        gap: 25px;
+      }
+    }
+
+    .flyer-column {
+      width: 100%;
+      text-align: center;
+    }
+
+    .flyer-link {
+      display: block;
+      text-decoration: none;
+      background: transparent;
+      padding: 0;
+      border: none;
+    }
+
     .flyer-column img {
       width: 100%;
+      max-width: 100%;
       height: auto;
-      border-radius: 6px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      border-radius: 8px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
+
+    .flyer-column img:hover {
+      transform: scale(1.01);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+    }
+
     .details-column {
       background-color: #fbfbfa;
       padding: 30px;
       border-radius: 6px;
       border: 1px solid var(--border-color);
     }
+
     .location-card {
       background-color: rgba(144, 18, 18, 0.05);
       border-left: 4px solid var(--brand-burgundy);
@@ -35,26 +65,33 @@
       margin: 25px 0;
       border-radius: 0 4px 4px 0;
     }
+
     .archive-link-box {
       margin-top: 30px;
       padding-top: 20px;
       border-top: 1px dashed var(--border-color);
       text-align: center;
     }
-    .fb-btn {
+
+    /* Vibrant Orange Ticket Button */
+    .ticket-btn {
       display: inline-block;
-      background-color: #3b5998;
+      background: linear-gradient(135deg, #ff7518 0%, #e05e00 100%);
       color: #ffffff !important;
-      padding: 10px 20px;
-      border-radius: 4px;
+      padding: 14px 28px;
+      border-radius: 6px;
       text-decoration: none;
       font-weight: bold;
-      font-size: 0.9rem;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-      transition: background-color 0.2s ease;
+      font-size: 1.1rem;
+      box-shadow: 0 4px 10px rgba(255, 117, 24, 0.3), 0 2px 5px rgba(0,0,0,0.2);
+      transition: all 0.2s ease;
+      letter-spacing: 0.5px;
     }
-    .fb-btn:hover {
-      background-color: #2d4373;
+
+    .ticket-btn:hover {
+      background: linear-gradient(135deg, #ff8533 0%, #ff4500 100%);
+      box-shadow: 0 6px 15px rgba(255, 117, 24, 0.5), 0 4px 8px rgba(0,0,0,0.3);
+      transform: translateY(-2px);
     }
   </style>
 </head>
@@ -90,29 +127,27 @@
   <!-- Main Content Area -->
   <main class="main-container">
     
-    <h2 class="section-title" style="text-align: center; margin-bottom: 10px;">Silents is Back, this time with a Halloween theme!</h2>
+    <h2 class="section-title" style="text-align: center; margin-bottom: 20px;">Silents is Back, this time with a Halloween theme!</h2>
 
     <div class="silents-layout">
       
-      <!-- Left Column: The 2026 Halloween Flyer -->
+      <!-- Left Column: The 2026 Halloween Flyer (Larger, No Blue BG) -->
       <div class="flyer-column">
-        <!-- Relative path to find the flyer we stashed in the root events directory -->
-        <a target="_blank" href="https://2026silentsunderthestars.eventbrite.com/" class="fb-btn">
+        <a target="_blank" rel="noopener" href="https://2026silentsunderthestars.eventbrite.com/" class="flyer-link">
           <img src="Silents2026.png" alt="Silents Under the Stars: Halloween Flyer - October 24, 2026">
         </a>
       </div>
 
-      <!-- Right Column: Event Details & Archive -->
+      <!-- Right Column: Event Details & Ticket Button -->
       <div class="details-column">
         <h3 style="color: var(--brand-burgundy); margin-top: 0; font-family: 'Georgia', serif; font-size: 1.5rem;">A Haunted Night of Heritage</h3>
         <p style="line-height: 1.6; color: var(--text-dark);">
          Dare to step into the shadowy grounds of William S. Hart Park as <em>Silents Under the Stars</em> takes a chilling turn for autumn! As dusk falls over Hart Hall, gather with us in the hall for a thrilling cinematic night featuring the 1925 silent horror classic <strong>The Phantom of the Opera</strong> starring Lon Chaney. Accompanied by a spellbinding live score by Ray Lowe, your terrifyingly fun evening also includes a delicious dinner and dessert, a silent auction, and musical surprises hidden in the dark!
         </p>
 
-
-        <!-- Past Gallery Archive Feature Link -->
+        <!-- Orange Get Your Tickets Button -->
         <div class="archive-link-box">
-          <a target="_blank" href="https://2026silentsunderthestars.eventbrite.com/" class="fb-btn">
+          <a target="_blank" rel="noopener" href="https://2026silentsunderthestars.eventbrite.com/" class="ticket-btn">
             Get Your Tickets Here!
           </a>
         </div>
@@ -140,4 +175,3 @@
 
 </body>
 </html>
-
